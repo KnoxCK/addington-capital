@@ -1,0 +1,40 @@
+.banner-landing {
+  background-image: linear-gradient(-225deg, rgba(0,0,0,0.7) 80%, rgba(0,0,0,0.7) 80%), url('http://res.cloudinary.com/dqxvcdy6w/image/upload/v1496753769/London-skyline-gherkin-thinkstock_lhncnj.jpg');
+  color: white;
+  text-align: left;
+  height: calc(100vh);
+  width: 100%;
+  background-size: cover !important;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 5px;
+  position: relative;
+  z-index: 1;
+}
+.banner-content {
+  height: 100px;
+  padding: 0 30vw;
+  margin-bottom: 25vh;
+  h1, h6 {
+    color: #DA6024;
+  }
+  i {
+    color: white;
+  }
+  i:hover {
+    text-decoration: none;
+  }
+}
+.blue-wrapper {
+   background-color: #7D98AA;
+   padding: 4px 30vw;
+   color: white;
+   display: flex;
+   align-items: center;
+   h1 {
+    margin: 0;
+    font-size: 100px;
+   }
+}
