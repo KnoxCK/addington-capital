@@ -6,3 +6,14 @@ $(function(){
     }
   });
 });
+
+// $(function(){
+//   $('.navbar-addcap-right a').click(function(e) {
+//     $('.navbar-addcap-right a').each(function() {
+//       console.log($(this));
+//      $(this).removeClass('active');
+//     });
+//     console.log(this);
+//       $(this).addClass('active');
+//   });
+// });
