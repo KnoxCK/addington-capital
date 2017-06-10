@@ -1,7 +1,8 @@
 class PagesController < ApplicationController
-  skip_before_action :authenticate_user!, only: [ :home, :what_we_do, :our_properties, :management_team, :press_media, :contact_us ]
+  skip_before_action :authenticate_user!
 
   def home
+    @transaction = Transaction.first
   end
 
   def what_we_do
