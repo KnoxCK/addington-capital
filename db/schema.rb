@@ -10,10 +10,37 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170606113948) do
+ActiveRecord::Schema.define(version: 20170610091810) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
+
+  create_table "managements", force: :cascade do |t|
+    t.string   "name"
+    t.string   "position"
+    t.text     "description"
+    t.string   "vcard"
+    t.string   "twitter_url"
+    t.string   "linkedin_url"
+    t.string   "facebook_url"
+    t.datetime "created_at",   null: false
+    t.datetime "updated_at",   null: false
+  end
+
+  create_table "press_releases", force: :cascade do |t|
+    t.string   "title"
+    t.text     "body"
+    t.string   "photo"
+    t.text     "first_paragraph"
+    t.datetime "created_at",      null: false
+    t.datetime "updated_at",      null: false
+  end
+
+  create_table "transactions", force: :cascade do |t|
+    t.integer  "value"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
 
   create_table "users", force: :cascade do |t|
     t.string   "email",                  default: "", null: false
