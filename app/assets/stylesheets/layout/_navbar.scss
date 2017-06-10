@@ -45,7 +45,12 @@
   padding: 10px 15px;
   margin-right: 5px;
   margin-left: 5px;
+  &.active {
+    text-decoration: none;
+    background-color: #DA6024;
+  }
 }
+
 .navbar-addcap-link:hover {
   color: white;
   text-decoration: none;
@@ -80,7 +85,7 @@
 }
 
 
-//MOBILE: 
+//MOBILE:
 
 //TOGGLE
 
