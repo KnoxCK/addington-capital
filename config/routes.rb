@@ -6,5 +6,6 @@ Rails.application.routes.draw do
   get 'management_team', to: 'pages#management_team'
   get 'press_media', to: 'pages#press_media'
   get 'contact_us', to: 'pages#contact_us'
+  get 'downloadbrochure', to: 'application#download_brochure'
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 end
