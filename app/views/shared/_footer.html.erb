@@ -1,3 +1,40 @@
 <div class="footer">
-  <%= link_to "Download Brochure", downloadbrochure_path %>
+	<div class="vertical-line">
+		<div class="footer-page-links footer-child">
+			<p><%= link_to "Home", root_path %><br>
+			<%= link_to "What We Do", what_we_do_path %><br>
+			<%= link_to "Our Properties", our_properties_path %><br>
+			<%= link_to "Management Team", management_team_path %><br>
+			<%= link_to "Press & Media", press_media_path %><br>
+			<%= link_to "Contact Us", contact_us_path %></p>
+		</div>
+	</div>
+	<div class="vertical-line">
+		<div class="footer-address footer-child">
+			<p>6 Heddon Street<br>
+			London<br>
+			W1B 4BT<br>
+			<br>
+			+44 (0)20 7042 9250<br>
+			<%= link_to "info@addingtoncapital.com", "mailto:info@addingtoncapital.com" %> </p>
+		</div>
+	</div>
+	<div class="vertical-line">
+		<div class="footer-official footer-child">
+			<p>Registered Office<br>
+			Company No. 0897648<br>
+			Vat No. 7456390287<br>
+			Registered In England & Wales</p>
+		</div>
+	</div>
+	<div class="vertical-line">
+		<div class="footer-brochure-img footer-child">
+			<%= image_tag "http://res.cloudinary.com/dqxvcdy6w/image/upload/v1497288388/Screen_Shot_2017-06-12_at_18.25.56_xjesi1.png" %>
+		</div>
+	</div>
+	<div class="vertical-line-last">
+		<div class="footer-brochure">
+			<%= link_to "Download Brochure", downloadbrochure_path %>
+		</div>
+	</div>
 </div>
