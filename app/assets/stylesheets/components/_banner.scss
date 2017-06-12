@@ -15,7 +15,7 @@
 }
 .banner-content {
   height: 100px;
-  padding: 0 30vw;
+  padding: 0 25vw;
   margin-bottom: 25vh;
   h1, h6 {
     color: #DA6024;
@@ -25,16 +25,5 @@
   }
   i:hover {
     text-decoration: none;
-  }
-}
-.blue-wrapper {
-  background-color: #7D98AA;
-  padding: 4px 30vw;
-  color: white;
-  display: flex;
-  align-items: center;
-  h1 {
-   margin: 0;
-   font-size: 100px;
   }
 }
