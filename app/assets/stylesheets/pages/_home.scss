@@ -64,9 +64,9 @@
 	background-color: #ECECEB;
 }
 .what-we-do {
-	padding: 30px 20vw 20px 25vw;
+	padding: 30px 25vw 20px 25vw;
 	h4 {
-		padding-top: 30px;
+		padding-top: 20px;
 		padding-bottom: 30px;
 	}
 	h3 {
@@ -81,9 +81,38 @@
 		font-weight: bold;
 	}
 }
-
-
-
+.blue-contact-wrapper {
+	background-color: #7D98AA;
+	color: white;
+	padding: 20px;
+}
+.contact-text {
+	span {
+		color: #3C2F2C;
+	}
+	a {
+		text-decoration: none;
+		color: white;
+	}
+	p {
+		margin: 0;
+	}
+}
+.contact-address {
+	padding: 10px 0 21px 0;
+}
+.contact-img {
+	display: flex;
+	justify-content: center;
+	img {
+		width: 450px;
+    	height: 350px;
+    	margin-top: 20px;
+	}
+}
+.spacer {
+	height: 40px;
+}
 
 
 

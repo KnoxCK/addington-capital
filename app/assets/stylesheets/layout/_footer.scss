@@ -1,6 +1,48 @@
 // Your footer style
 .footer {
   width: 100vw;
-  height: 200px;
+  height: auto;
   background-color: #B2A7A2;
+  display: flex;
+  justify-content: center;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  color: white;
+  font-size: 10px;
+  font-weight: lighter;
+  a {
+		color: white;
+		text-decoration: none;
+	}
+  a:hover {
+  	color: #DA6024;
+  }
+}
+.footer-page-links {
+
+}
+.footer-brochure-img {
+	img {
+		width: 100px;
+	}
+}
+.footer-brochure {
+	width: 54px;
+	a {
+		text-decoration: underline;
+		word-break: break-all;
+		margin-right: 10px;
+	}
+}
+.footer-child {
+	padding: 0 10px;
+	p {
+		margin-bottom: 0;
+	}
+}
+.vertical-line {
+	border-left: solid #D8D2CF 1px;
+}
+.vertical-line-last {
+	border-right: solid #D8D2CF 1px;
 }
