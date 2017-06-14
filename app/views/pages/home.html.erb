@@ -18,7 +18,6 @@
 	<h1>£<%= @transaction.value %>M</h1>
 	<h4>VALUE OF<br>TRANSACTIONS<br>TO DATE</h4>
 </div>
-
 <div class="pressmedia">
 	<h2>PRESS & MEDIA</h2>
 	<div class="press-tabs">
@@ -27,18 +26,7 @@
 	</div>
 	<div class="latest-news">
 		<div class="dotted-line"></div>
-		<div class="latest-news-post">
-			<div class="news-date">
-				<h5>Posted in News on 12 Jun, 2017</h5>
-			</div>
-			<div class="news-snippet">
-				<div class="news-title">
-					<h5>Europa Capital and Addington Capital entice new anchor tenant to the Quadrant, Abingdon Science Park, Oxfordshire</h5>
-					<p>Renim et odi doluptatem di cust eatis explacest utet et quos esto consequidis excestiatia esto quatus sus consernam nonserum Xerum venim et odi doluptatem di cust eatis explacest utet et quos esto consequidis excestiatia esto quatus sus consernam nonserum.</p>
-					<h6>[ READ MORE... ]</h6>
-				</div>
-			</div>
-		</div>
+		<%= render 'pages/press_cuttings' %>
 	</div>
 </div>
 <div class="what-we-do-wrapper">
@@ -54,12 +42,7 @@
 <div class="blue-contact-wrapper">
 	<div class="contact-text text-center">
 		<h2>CONTACT US</h2>
-		<p class="contact-address">6 Heddon Street, London, W1B 4BT</p>
-		<p><span>T: </span>+44 (0)20 7042 9250</p>
-		<p><span>E: </span><%= link_to "info@addingtoncapital.com", "mailto:info@addingtoncapital.com" %></p>
-	</div>
-	<div class="contact-img">
-		<%= image_tag "http://res.cloudinary.com/dqxvcdy6w/image/upload/v1497284012/Screen_Shot_2017-06-12_at_17.12.41_sbvmpp.png" %>
+		<%= render 'pages/contact_details' %>
 	</div>
 </div>
 <div class="spacer"></div>
