@@ -1,0 +1,29 @@
+.blue-contact-wrapper {
+	background-color: #7D98AA;
+	color: white;
+	padding: 20px;
+}
+.contact-text {
+	span {
+		color: #3C2F2C;
+	}
+	a {
+		text-decoration: none;
+		color: white;
+	}
+	p {
+		margin: 0;
+	}
+}
+.contact-address {
+	padding: 10px 0 21px 0;
+}
+.contact-img {
+	display: flex;
+	justify-content: center;
+	img {
+		width: 550px;
+    	height: 425px;
+    	margin-top: 20px;
+	}
+}

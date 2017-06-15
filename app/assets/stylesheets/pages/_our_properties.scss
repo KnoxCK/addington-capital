@@ -15,8 +15,8 @@
 .properties-box {
 	position: relative;
 	background-color: #7D98AA;
-	width: 15vw;
-	height: 37vh;
+	width: 200px;
+    height: 250px;
 	margin: 0 2px;
 	img {
 		position: absolute;
@@ -46,8 +46,15 @@
 .prop-box-bottom {
 	margin-top: 4px;
 }
+.property-wrapper {
+	display: flex;
+	justify-content: center;
+	padding-bottom: 20px;
+}
 .property-lg {
-	padding: 10px 28vw 40px 28vw;
+	width: 606px;
+	margin-left: 40px;
+	margin-right: 40px;
 }
 .property-lg-box {
 	background-color: #FFFFFF;
@@ -56,8 +63,8 @@
 		padding-top: 5px;
 	}
 	img {
-		width: 24vw;
-    	height: 20vw;
+		width: 300px;
+    	height: 250px;
 	}
 }
 .property-lg-right {

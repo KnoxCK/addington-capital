@@ -11,9 +11,15 @@
 }
 .what-we-do-wrapper {
 	background-color: #ECECEB;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 .what-we-do {
-	padding: 30px 25vw 30px 25vw;
+	padding-top: 30px;
+	padding-left: 40px;
+	padding-right: 40px;
+	width: 930px;
 	h4 {
 		padding-top: 20px;
 		padding-bottom: 30px;
@@ -28,36 +34,7 @@
 	h6 {
 		font-size: 10px;
 		font-weight: bold;
+		margin-bottom: 50px;
 	}
 }
-.blue-contact-wrapper {
-	background-color: #7D98AA;
-	color: white;
-	padding: 20px;
-}
-.contact-text {
-	span {
-		color: #3C2F2C;
-	}
-	a {
-		text-decoration: none;
-		color: white;
-	}
-	p {
-		margin: 0;
-	}
-}
-.contact-address {
-	padding: 10px 0 21px 0;
-}
-.contact-img {
-	display: flex;
-	justify-content: center;
-	img {
-		width: 450px;
-    	height: 350px;
-    	margin-top: 20px;
-	}
-}
-
 

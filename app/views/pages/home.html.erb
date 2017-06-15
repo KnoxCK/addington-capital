@@ -1,5 +1,5 @@
-<div class="banner-landing">
-	<div class="banner-content">
+<div class="banner-landing" id="home-main">
+	<div class="banner-content" id="Wrapper">
 		<h1>Addington Capital:</h1>
 		<h3>Flurry of Investment Sales shows growing
 		demand for commercial property from HNW’s</h3>
@@ -19,7 +19,7 @@
 	<div class="more-press-landing text-center">
 		<h6><%= link_to "[ MORE PRESS ]", "" %></h6>
 		<%= link_to "" do %>
-			<%= image_tag "Addington_Capital_down.png", class: "hand-icon-landing" %>
+			<%= image_tag "Addington_Capital_down.png", class: "hand-icon-landing", id: "header-page-down" %>
 		<% end %>
 	</div>
 </div>
@@ -27,6 +27,7 @@
 	<h1>£<%= @transaction.value %>M</h1>
 	<h4>VALUE OF<br>TRANSACTIONS<br>TO DATE</h4>
 </div>
+<div class="press-wrapper">
 <div class="pressmedia">
 	<h2>PRESS & MEDIA</h2>
 	<div class="press-tabs">
@@ -43,14 +44,21 @@
 		<% end %>
 	</div>
 </div>
+</div>
 <div class="what-we-do-wrapper">
+	<%= link_to "" do %>
+		<%= image_tag "Addington_Capital_arrow_left.png", class: "arrow about-arrow" %>
+	<% end %>
 	<div class="what-we-do text-center">
 		<h1>WHAT WE DO</h1>
-		<h4>Addington adopts a research led approach to the macroeconomic factors affecting its investment decisions and a bottom up analysis of specific projects.</h4>
+		<h4>Addington adopts a research led approach to the macroeconomic factors<br> affecting its investment decisions and a bottom up analysis of specific projects.</h4>
 		<h3>RESIDENTIAL</h3>
 		<h5>Renim et odi doluptatem di cust eatis explacest utet et quos esto consequidis excestiatia esto quatus sus consernam nonserum Xerum venim et odi doluptatem di cust eatis explacest utet et quos esto consequidis excestiatia esto quatus sus consernam nonserum.</h5>
 		<h6>[ VIEW CASE STUDIES... ]</h6>
 	</div>
+	<%= link_to "" do %>
+		<%= image_tag "Addington_Capital_arrow_right.png", class: "arrow about-arrow" %>
+	<% end %>
 </div>
 <div class="spacer">
 	<div class="text-center">
