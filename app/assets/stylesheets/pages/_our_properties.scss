@@ -4,12 +4,17 @@
 	h5 {
 		padding: 17px;
 	}	
-}  		
+} 
+.properties-wrapper {
+	background-color: #E9E9E8;
+	display: flex;
+	justify-content: center;
+} 		
 .properties-boxes {
 	display: flex;
 	justify-content: center;
 	padding: 0 20vw;
-	background-color: #E9E9E8;
+	width: 1123px;
 	flex-wrap: wrap;
 }
 .properties-box {
