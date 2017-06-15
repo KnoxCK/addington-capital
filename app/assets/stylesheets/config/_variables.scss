@@ -2,9 +2,18 @@
  * Fonts
  * ------------------------------------- */
 // Google fonts
-@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,300,700|Raleway:400,100,300,700,500");
-$base-font: "Open Sans", "Helvetica", "sans-serif";
-$header-font: "Raleway", "Helvetica", "sans-serif";
+// @import url("https://fonts.googleapis.com/css?family=Open+Sans:400,300,700|Raleway:400,100,300,700,500");
+// $base-font: "Open Sans", "Helvetica", "sans-serif";
+// $header-font: "Raleway", "Helvetica", "sans-serif";
+
+@import "fonts";
+$Bliss2B: 'Bliss2B'; 
+$Avenir: 'AvenirNextCondensed'; 
+$base-font: "Bliss2B", "Helvetica", "sans-serif";
+$header-font: "AvenirNextCondensed", "Helvetica", "sans-serif";
+
+
+// font-family: $Bliss2B;
 
 // Local fonts (uncomment following lines)
 // @font-face {
@@ -15,6 +24,7 @@ $header-font: "Raleway", "Helvetica", "sans-serif";
 //        font-url('FontFile.ttf') format('truetype')
 // }
 // $my-font: "Font Name";
+
 
 // Font-size and line-height
 $base-size: 16px;

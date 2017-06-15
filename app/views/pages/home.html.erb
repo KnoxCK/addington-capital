@@ -3,15 +3,24 @@
 		<h1>Addington Capital:</h1>
 		<h3>Flurry of Investment Sales shows growing
 		demand for commercial property from HNW’s</h3>
-		<h4>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores ab dolore voluptas. Inventore earum officiis, tempore.</h4>
+		<h4>As consernam nonserum laudandunt. Cum nobis reheni omnimpo resero moluptatur aciendi caturui repudit.</h4>
 	    <h5>23rd Jan 2017</h5>
-	    <h6>[ READ MORE ]...</h6>
-		<h5><%= link_to "" do %>
-			<i class= "fa fa-twitter"></i>
-			<i class= "fa fa-instagram"></i>
-			<i class= "fa fa-facebook"></i>
+	    <h6><%= link_to "[ READ MORE ]...", "" %></h6>
+		<%= link_to "" do %>
+			<%= image_tag "Addington_Capital_Twitter_logo.png", class: "social_media_icon" %>
 		<% end %>
-		</h5>
+		<%= link_to "" do %>
+			<%= image_tag "Addington_Capital_LinkedIn_logo.png", class: "social_media_icon" %>
+		<% end %>
+		<%= link_to "" do %>
+			<%= image_tag "Addington_Capital_Facebook_logo.png", class: "social_media_icon" %>
+		<% end %>
+	</div>
+	<div class="more-press-landing text-center">
+		<h6><%= link_to "[ MORE PRESS ]", "" %></h6>
+		<%= link_to "" do %>
+			<%= image_tag "Addington_Capital_down.png", class: "hand-icon-landing" %>
+		<% end %>
 	</div>
 </div>
 <div class="blue-value-wrapper">
@@ -28,6 +37,11 @@
 		<div class="dotted-line"></div>
 		<%= render 'pages/press_cuttings' %>
 	</div>
+	<div class="hand-icon-press text-center">
+		<%= link_to "" do %>
+			<%= image_tag "Addington_Capital_down_black.png", class: "hand-icn-press" %>
+		<% end %>
+	</div>
 </div>
 <div class="what-we-do-wrapper">
 	<div class="what-we-do text-center">
@@ -38,14 +52,19 @@
 		<h6>[ VIEW CASE STUDIES... ]</h6>
 	</div>
 </div>
-<div class="spacer"></div>
+<div class="spacer">
+	<div class="text-center">
+		<%= link_to "" do %>
+			<%= image_tag "Addington_Capital_down_white.png", class: "hand-icn-about" %>
+		<% end %>
+	</div>
+</div>
 <div class="blue-contact-wrapper">
 	<div class="contact-text text-center">
 		<h2>CONTACT US</h2>
 		<%= render 'pages/contact_details' %>
 	</div>
 </div>
-<div class="spacer"></div>
 
 
 

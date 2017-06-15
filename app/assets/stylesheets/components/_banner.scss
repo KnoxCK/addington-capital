@@ -19,13 +19,19 @@
   margin-bottom: 25vh;
   h1, h6 {
     color: #DA6024;
+
   }
-  i {
-    color: white;
-  }
-  i:hover {
+  a {
+    color: #DA6024;
     text-decoration: none;
   }
+  a:hover {
+    text-decoration: underline;
+  }
+}
+.more-press-landing {
+  position: absolute;
+  bottom: 10px;
 }
 .pages-banner {
   background: linear-gradient(-225deg, rgba(0,0,0,0.7) 80%, rgba(0,0,0,0.7) 80%), url('http://res.cloudinary.com/dqxvcdy6w/image/upload/v1496753769/London-skyline-gherkin-thinkstock_lhncnj.jpg');
