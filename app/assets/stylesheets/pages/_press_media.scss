@@ -12,6 +12,12 @@
 	h5 {
 		padding-right: 35px;
 	}	
+	span {
+		a {
+			color: #DA6024;
+			text-decoration: underline;
+		}
+	}
 	a {
 		text-decoration: none;
 		color: #392F2C;
@@ -27,7 +33,7 @@
 }
 .latest-news-post {
 	display: flex;
-	padding: 10px 0 20vw 10px 25vw;
+	padding: 10px 20vw 10px 25vw;
 	margin-top: -22px;
 	margin-bottom: -22px;
 	h6, a {
@@ -58,16 +64,20 @@
 		}
 	}
 }
+.news-snippet {
+	width: 1300px;
+}
 .news-title {
 	h5 {
 		color: #DA6024;
 	}
 }
-.news-date {
-	width: 435px;
-    margin-right: 85px;
+.news-date h5 {
+    width: 125px;
+    margin-right: 60px;
 }
-.full-press {
+.full-news {
+	width: 500px;
 	color: white;
 	h6 {
 		color: #DA6024;

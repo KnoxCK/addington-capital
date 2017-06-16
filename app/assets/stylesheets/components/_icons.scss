@@ -11,21 +11,25 @@
 }
 .hand-icon-press {
 	display: flex;
+	left: calc(50% - 25px);
 	justify-content: center;
 	padding-top: 18px;
 }
 .hand-icn-press {
 	position: absolute;
+	left: calc(50% - 25px);
 	bottom: 5px;
 	width: 35px;
 }
 .hand-icn-about {
 	position: absolute;
+	left: calc(50% - 25px);
 	top: -18px;
 	width: 40px;
 }
 .hand-icn-contact {
 	position: absolute;
+	left: calc(50% - 25px);
 	bottom: -18px;
 	width: 40px;
 }

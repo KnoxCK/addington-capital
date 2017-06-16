@@ -6,7 +6,7 @@
 		demand for commercial property from HNW’s</h3>
 		<h4>As consernam nonserum laudandunt. Cum nobis reheni omnimpo resero moluptatur aciendi caturui repudit.</h4>
 	    <h5>23rd Jan 2017</h5>
-	    <h6><%= link_to "[ READ MORE ]...", "" %></h6>
+	    <h6><%= link_to "[ READ MORE ]...", press_media_path %></h6>
 		<%= link_to "" do %>
 			<%= image_tag "Addington_Capital_Twitter_logo.png", class: "social_media_icon" %>
 		<% end %>
@@ -18,7 +18,7 @@
 		<% end %>
 	</div>
 	<div class="more-press-landing text-center">
-		<h6><%= link_to "[ MORE PRESS ]", "" %></h6>
+		<h6>[ MORE PRESS ]</h6>
 		<%= link_to "" do %>
 			<%= image_tag "Addington_Capital_down.png" "#press", class: "hand-icon-landing", id: "header-page-down" %>
 		<% end %>
@@ -32,7 +32,7 @@
 <div class="pressmedia">
 	<h2>PRESS & MEDIA</h2>
 	<div class="press-tabs">
-		<h5><%= link_to "LATEST NEWS", "" %></h5>
+		<h5><span><%= link_to "LATEST NEWS", "" %></span></h5>
 		<h5><%= link_to "NEWS ARCHIVE", "" %></h5>
 	</div>
 	<div class="latest-news">
@@ -50,17 +50,23 @@
 <div class="what-we-do-margin hidden"></div>
 <div class="what-we-do-wrapper" id="what-we-do">
 	<%= link_to "" do %>
-		<%= image_tag "Addington_Capital_arrow_left.png", class: "arrow about-arrow" %>
+		<%= image_tag "Addington_Capital_arrow_left.png", class: "arrow about-arrow about-arrow-left" %>
 	<% end %>
 	<div class="what-we-do text-center">
 		<h1>WHAT WE DO</h1>
 		<h4>Addington adopts a research led approach to the macroeconomic factors<br> affecting its investment decisions and a bottom up analysis of specific projects.</h4>
-		<h3>RESIDENTIAL</h3>
-		<h5>Renim et odi doluptatem di cust eatis explacest utet et quos esto consequidis excestiatia esto quatus sus consernam nonserum Xerum venim et odi doluptatem di cust eatis explacest utet et quos esto consequidis excestiatia esto quatus sus consernam nonserum.</h5>
+		<div class="about-resi">
+			<h3>RESIDENTIAL</h3>
+			<h5>Renim et odi doluptatem di cust eatis explacest utet et quos esto consequidis excestiatia esto quatus sus consernam nonserum Xerum venim et odi doluptatem di cust eatis explacest utet et quos esto consequidis excestiatia esto quatus sus consernam nonserum.</h5>
+		</div>
+		<div class="about-commercial hidden">
+			<h3>COMMERCIAL</h3>
+			<h5>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus iusto aliquid sequi delectus inventore a facilis nulla, recusandae eligendi voluptatem magnam nobis impedit, maxime quo dolore nostrum. Veniam, ducimus, culpa eligendi voluptatem magnam nobis impedit.</h5>
+		</div>
 		<h6>[ VIEW CASE STUDIES... ]</h6>
 	</div>
-	<%= link_to "" do %>
-		<%= image_tag "Addington_Capital_arrow_right.png", class: "arrow about-arrow" %>
+	<%= link_to "#" do %>
+		<%= image_tag "Addington_Capital_arrow_right.png", class: "arrow about-arrow about-arrow-right" %>
 	<% end %>
 </div>
 <div class="spacer">
