@@ -12,6 +12,14 @@
 	h5 {
 		padding-right: 35px;
 	}	
+	a {
+		text-decoration: none;
+		color: #392F2C;
+	}
+	a:hover {
+		color: #DA6024;
+		text-decoration: underline;
+	}
 }
 .dotted-line {
 	border-bottom: #392F2C dotted 2px;
@@ -19,18 +27,26 @@
 }
 .latest-news-post {
 	display: flex;
-	padding: 0 20vw 0 25vw;
-	h6 {
+	padding: 10px 0 20vw 10px 25vw;
+	margin-top: -22px;
+	margin-bottom: -22px;
+	h6, a {
 		font-size: 10px;
 		font-weight: bold;
+		text-decoration: none;
+		color: #392F2C;
 	}
 	p {
 		font-size: 12px;
 		color: #C1B1AA;
+		font-stretch: ultra-condensed;
 	}
 }
 .latest-news-post:hover {
 	background-color: #392F2C;
+	a {
+		color: white;
+	}
 	.news-date {
 		h5 {
 			color: white;
@@ -50,4 +66,10 @@
 .news-date {
 	width: 435px;
     margin-right: 85px;
+}
+.full-press {
+	color: white;
+	h6 {
+		color: #DA6024;
+	}
 }

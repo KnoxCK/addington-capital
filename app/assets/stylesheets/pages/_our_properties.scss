@@ -4,6 +4,14 @@
 	h5 {
 		padding: 17px;
 	}	
+	a {
+		color: #392F2C;
+		text-decoration: none;
+	}
+	a:hover {
+		text-decoration: underline;
+		color: #7D98AA;
+	}
 } 
 .properties-wrapper {
 	background-color: #E9E9E8;
@@ -23,12 +31,28 @@
 	width: 200px;
     height: 250px;
 	margin: 0 2px;
+	z-index:0; 
 	img {
 		position: absolute;
 		top: 25px;
 		left: 17px;
 		right: 17px;
 		width: 80%;
+	}
+}
+.property-box-overlay {
+	position: absolute;
+	background: rgba(0, 0, 0, 0.5);
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 100;
+    display: none;
+}
+.properties-box:hover {
+	.property-box-overlay {
+		display: block;
 	}
 }
 .properties-text {

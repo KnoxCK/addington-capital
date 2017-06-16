@@ -1,3 +1,4 @@
+<%= render 'shared/navbar_landing' %>
 <div class="banner-landing" id="home-main">
 	<div class="banner-content" id="Wrapper">
 		<h1>Addington Capital:</h1>
@@ -38,6 +39,7 @@
 		<div class="dotted-line"></div>
 		<%= render 'pages/press_cuttings' %>
 	</div>
+	<div id="whatwedo"></div>
 	<div class="hand-icon-press text-center">
 		<%= link_to "" do %>
 			<%= image_tag "Addington_Capital_down_black.png", class: "hand-icn-press", id: "press-page-down" %>
@@ -45,7 +47,8 @@
 	</div>
 </div>
 </div>
-<div class="what-we-do-wrapper">
+<div class="what-we-do-margin hidden"></div>
+<div class="what-we-do-wrapper" id="what-we-do">
 	<%= link_to "" do %>
 		<%= image_tag "Addington_Capital_arrow_left.png", class: "arrow about-arrow" %>
 	<% end %>

@@ -1,0 +1,64 @@
+<div class="navbar-addcap navbar-addcap-fixed hidden-xs hidden-sm">
+  <!-- Logo -->
+  <%= link_to root_path, class: "navbar-addcap-brand" do %>
+    <%= image_tag "Addington_Capital_logo.png" %>
+  <% end %>
+
+  <!-- Right Navigation -->
+  <div class="navbar-addcap-right">
+
+<!-- Navbar menu -->
+    <!-- Home link -->
+    <div class="outline">
+      <%= link_to "HOME", root_path, class: "navbar-addcap-link" %>
+    </div>
+
+  <!-- specific to navbar main -->
+    <!-- What we do link --> 
+    <div class="link-outline">
+      <%= link_to "WHAT WE DO", root_path(:anchor => "whatwedo"), class: "navbar-addcap-link", id: "whatwedolink" %>
+    </div>
+  <!-- specific to navbar main -->
+
+      <!-- Properties  link -->
+    <div class="link-outline">
+      <%= link_to "OUR PROPERTIES", our_properties_path, class: "navbar-addcap-link" %>
+    </div>
+      <!-- Team link -->
+    <div class="link-outline">
+      <%= link_to "MANAGEMENT TEAM", management_team_path, class: "navbar-addcap-link" %>
+    </div>
+      <!-- Press link -->
+    <div class="link-outline">
+      <%= link_to "PRESS & MEDIA", press_media_path, class: "navbar-addcap-link" %>
+    </div>
+      <!-- Contact link -->
+    <div class="link-outline">
+      <%= link_to "CONTACT US", contact_us_path, class: "navbar-addcap-link" %>
+    </div>
+  </div>
+</div>
+
+
+
+<!-- Dropdown list appearing on mobile only -->
+<div class="navbar-addcap navbar-addcap-fixed hidden-md hidden-lg">
+  <!-- Logo -->
+  <%= link_to root_path, class: "navbar-addcap-brand" do %>
+    <%= image_tag "" %>
+  <% end %>
+  <div class="navbar-addcap-item hidden-md hidden-lg">
+    <div class="dropdown toggle-white">
+      <a class="fa fa-bars dropdown-toggle" data-toggle="dropdown" href="#"></a>
+      <ul class="dropdown-menu dropdown-menu-right navbar-addcap-dropdown-menu">
+        <li><%= link_to "HOME", root_path %></li>
+        <li><%= link_to "WHAT WE DO", what_we_do_path %></li>
+        <li><%= link_to "OUR PROPERTIES", our_properties_path %></li>
+        <li><%= link_to "MANAGEMENT TEAM", management_team_path %></li>
+        <li><%= link_to "PRESS & MEDIA", press_media_path %></li>
+        <li><%= link_to "CONTACT US", contact_us_path %></li>
+      </ul>
+    </div>
+  </div>
+</div>
+
