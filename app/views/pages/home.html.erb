@@ -28,22 +28,23 @@
 	<h4>VALUE OF<br>TRANSACTIONS<br>TO DATE</h4>
 </div>
 <div class="press-wrapper">
-<div class="pressmedia">
-	<h2>PRESS & MEDIA</h2>
-	<div class="press-tabs">
-		<h5><%= link_to "LATEST NEWS", "" %></h5>
-		<h5><%= link_to "NEWS ARCHIVE", "" %></h5>
+	<div class="pressmedia">
+		<h2>PRESS & MEDIA</h2>
+		<div class="press-tabs">
+			<h5><%= link_to "LATEST NEWS", "" %></h5>
+			<h5><%= link_to "NEWS ARCHIVE", "" %></h5>
+		</div>
+		<div class="latest-news">
+			<div class="dotted-line"></div>
+			<%= render 'pages/press_cuttings' %>
+		</div>
+		<div id="what-we-do-jump"></div>
+		<div class="hand-icon-press text-center">
+			<%= link_to "" do %>
+				<%= image_tag "Addington_Capital_down_black.png", class: "hand-icn-press" %>
+			<% end %>
+		</div>
 	</div>
-	<div class="latest-news">
-		<div class="dotted-line"></div>
-		<%= render 'pages/press_cuttings' %>
-	</div>
-	<div class="hand-icon-press text-center">
-		<%= link_to "" do %>
-			<%= image_tag "Addington_Capital_down_black.png", class: "hand-icn-press" %>
-		<% end %>
-	</div>
-</div>
 </div>
 <div class="what-we-do-wrapper">
 	<%= link_to "" do %>
