@@ -1,19 +1,12 @@
 $(function(){
  var pathname = (window.location.pathname);
-  $('.navbar-addcap-right a').each(function() {
-    if ($(this).attr('href') === pathname) {
-      $(this).addClass('active');
-    }
-  });
+  if (window.location.hash === '#whatwedo') {
+    $('#what-we-do-link').addClass('active');
+  } else {
+    $('.navbar-addcap-right a').each(function() {
+      if ($(this).attr('href') === pathname) {
+        $(this).addClass('active');
+      }
+    });
+  }
 });
-
-// $(function(){
-//   $('.navbar-addcap-right a').click(function(e) {
-//     $('.navbar-addcap-right a').each(function() {
-//       console.log($(this));
-//      $(this).removeClass('active');
-//     });
-//     console.log(this);
-//       $(this).addClass('active');
-//   });
-// });
