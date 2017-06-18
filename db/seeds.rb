@@ -9,4 +9,4 @@ Transaction.destroy_all
 User.destroy_all
 
 Transaction.create!(value: 853)
-User.create(email: 'guv@test.com', password: '123456' admin: true)
+User.create(email: 'guv@test.com', password: '123456', admin: true)
