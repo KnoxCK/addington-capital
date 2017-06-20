@@ -10,10 +10,28 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170618084102) do
+ActiveRecord::Schema.define(version: 20170620115921) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
+
+  create_table "case_studies", force: :cascade do |t|
+    t.string   "title"
+    t.text     "summary"
+    t.text     "description"
+    t.string   "thumbnail"
+    t.string   "photo"
+    t.integer  "category_id"
+    t.datetime "created_at",  null: false
+    t.datetime "updated_at",  null: false
+    t.index ["category_id"], name: "index_case_studies_on_category_id", using: :btree
+  end
+
+  create_table "categories", force: :cascade do |t|
+    t.string   "name"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
 
   create_table "managements", force: :cascade do |t|
     t.string   "name"
@@ -32,6 +50,7 @@ ActiveRecord::Schema.define(version: 20170618084102) do
     t.text     "body"
     t.string   "photo"
     t.text     "first_paragraph"
+    t.date     "date"
     t.datetime "created_at",      null: false
     t.datetime "updated_at",      null: false
   end
@@ -60,4 +79,5 @@ ActiveRecord::Schema.define(version: 20170618084102) do
     t.index ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true, using: :btree
   end
 
+  add_foreign_key "case_studies", "categories"
 end
