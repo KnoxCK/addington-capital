@@ -3,6 +3,7 @@ class PagesController < ApplicationController
 
   def home
     @transaction = Transaction.first
+    @press_release = PressRelease.last
   end
 
   def what_we_do
