@@ -30,7 +30,7 @@
     <% end %>
 		<div class="properties-box" id=<%= case_study.title %>>
 			<%= link_to "" do %>
-				<%= image_tag case_study.photo %>
+				<%= cl_image_tag(case_study.photo, width: 150, height: 100, crop: :fill) %>
 				<div class="properties-text">
 					<h5><%= case_study.title.upcase %></h5>
 					<p><%= case_study.summary %></p>
