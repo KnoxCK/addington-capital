@@ -9,6 +9,7 @@ class PagesController < ApplicationController
   end
 
   def our_properties
+    @case_studies = CaseStudy.all
   end
 
   def management_team
