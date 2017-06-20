@@ -1,7 +1,7 @@
 <hr>
 <div class="latest-news-post">
 	<div class="news-date">
-		<h5>Posted in News on <%= press_release.date %></h5>
+		<h5>Posted in News on <%= press_release.formatted_date %></h5>
 	</div>
 	<div class="news-snippet">
 		<div class="news-title">
@@ -11,10 +11,10 @@
 				<h6><%= link_to "[ READ MORE... ]", "#", id: "news-read-more" %></h6>
 			</div>
 			<div class="full-news hidden slideDown">
-      <%= image_tag press_release.photo %>
+      <%= cl_image_tag(press_release.photo, width: 400, height: 200, crop: :fill) %>
 				<p><%= press_release.body %></p>
 				<br>
-        <p>Posted in News on <%= press_release.date %></p>
+        <p>Posted in News on <%= press_release.formatted_date %></p>
 				<h6><%= link_to "[ CLOSE ]", "#", id: "news-close" %></h6>
 			</div>
 		</div>
