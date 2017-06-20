@@ -10,3 +10,8 @@ User.destroy_all
 
 Transaction.create!(value: 853)
 User.create(email: 'guv@test.com', password: '123456', admin: true)
+Category.create(name: 'Retail')
+Category.create(name: 'Residential')
+Category.create(name: 'Offices')
+
+PressRelease.create(title: 'Press and Media Test', first_paragraph: 'This is the first paragraph. This is the first paragraph. This is the first paragraph.', body: 'This is the body This is the body This is the body. This is the bodyThis is the body This is the body. This is the body This is the body This is the body This is the body This is the body.This is the body This is the body This is the body This is the body This is the body. This is the body This is the body This is the body This is the body. This is the body.', photo: '')
