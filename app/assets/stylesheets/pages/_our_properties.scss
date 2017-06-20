@@ -3,7 +3,7 @@
 	justify-content: center;
 	h5 {
 		padding: 17px;
-	}	
+	}
 	a {
 		color: #392F2C;
 		text-decoration: none;
@@ -17,27 +17,27 @@
 		a {
 			color: #7D98AA;
 		}
-		
+
 	}
-} 
+}
 .properties-wrapper {
 	background-color: #E9E9E8;
 	display: flex;
 	justify-content: center;
 	flex-direction: column;
 	width: 100%;
-} 		
+}
 .properties-boxes-top {
 	display: flex;
 	justify-content: center;
 	width: auto;
-	
+
 }
 .properties-boxes-bottom {
 	display: flex;
 	justify-content: center;
 	width: auto;
-	
+	margin-top: 4px;
 }
 .properties-box {
 	position: relative;
@@ -45,7 +45,7 @@
 	width: 200px;
     height: 250px;
 	margin: 0 2px;
-	z-index:0; 
+	z-index:0;
 	img {
 		position: absolute;
 		top: 25px;

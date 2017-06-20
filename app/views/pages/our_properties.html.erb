@@ -13,84 +13,92 @@
 		<h2>OUR PROPERTIES</h2>
 	</div>
 </div>
+
 <div class="properties-tabs">
-	<h5><span><%= link_to "DEVELOPMENT", "" %></span></h5>
 	<h5><%= link_to "RETAIL", "" %></h5>
 	<h5><%= link_to "RESIDENTIAL", "" %></h5>
 	<h5><%= link_to "OFFICES", "" %></h5>
 </div>
+
 <div class="properties-wrapper">
-	<div class="properties-boxes-top">
-		<div class="properties-box" id="property">
-			<%= link_to "" do %>
-				<%= image_tag "http://res.cloudinary.com/dqxvcdy6w/image/upload/v1497430841/Screen_Shot_2017-06-14_at_10.00.09_iqbsr2.png" %>
-				<div class="properties-text">
-					<h5>HARMSWORTH HOUSE</h5>
-					<p>As consernam nonserumlauda ndunt. Cum nobis reheni omnimpo resero moluptatur aciendi caturui repudit.</p>
-					<h6>[ READ MORE ]</h6>
-				</div>
-				<div class="property-box-overlay"></div>
-			<% end %>
-		</div>
-		<div class="properties-box" id="property-two">
-			<%= link_to "" do %>
-				<%= image_tag "http://res.cloudinary.com/dqxvcdy6w/image/upload/v1497430841/Screen_Shot_2017-06-14_at_10.00.09_iqbsr2.png" %>
-				<div class="properties-text">
-					<h5>RANDALL HOUSE</h5>
-					<p>As consernam nonserumlauda ndunt. Cum nobis reheni omnimpo resero moluptatur aciendi caturui repudit.</p>
-					<h6>[ READ MORE ]</h6>
-				</div>
-				<div class="property-box-overlay"></div>
-			<% end %>
-		</div>
-		<div class="properties-box" id="property-three">
-			<%= link_to "" do %>
-				<%= image_tag "http://res.cloudinary.com/dqxvcdy6w/image/upload/v1497430841/Screen_Shot_2017-06-14_at_10.00.09_iqbsr2.png" %>
-				<div class="properties-text">
-					<h5>HARMSWORTH HOUSE</h5>
-					<p>As consernam nonserumlauda ndunt. Cum nobis reheni omnimpo resero moluptatur aciendi caturui repudit.</p>
-					<h6>[ READ MORE ]</h6>
-				</div>
-				<div class="property-box-overlay"></div>
-			<% end %>
-		</div>
-	</div>
-	<div class="properties-boxes-bottom">
-		<div class="properties-box prop-box-bottom" id="property-four">
-			<%= link_to "" do %>
-				<%= image_tag "http://res.cloudinary.com/dqxvcdy6w/image/upload/v1497430841/Screen_Shot_2017-06-14_at_10.00.09_iqbsr2.png" %>
-				<div class="properties-text">
-					<h5>RANDALL</h5>
-					<p>As consernam nonserumlauda ndunt. Cum nobis reheni omnimpo resero moluptatur aciendi caturui repudit.</p>
-					<h6>[ READ MORE ]</h6>
-				</div>
-				<div class="property-box-overlay"></div>
-			<% end %>
-		</div>
-		<div class="properties-box prop-box-bottom" id="property-five">
-			<%= link_to "" do %>
-				<%= image_tag "http://res.cloudinary.com/dqxvcdy6w/image/upload/v1497430841/Screen_Shot_2017-06-14_at_10.00.09_iqbsr2.png" %>
-				<div class="properties-text">
-					<h5>HARMSWORTH HOUSE</h5>
-					<p>As consernam nonserumlauda ndunt. Cum nobis reheni omnimpo resero moluptatur aciendi caturui repudit.</p>
-					<h6>[ READ MORE ]</h6>
-				</div>
-				<div class="property-box-overlay"></div>
-			<% end %>
-		</div>
-		<div class="properties-box prop-box-bottom" id="property-six">
-			<%= link_to "" do %>
-				<%= image_tag "http://res.cloudinary.com/dqxvcdy6w/image/upload/v1497430841/Screen_Shot_2017-06-14_at_10.00.09_iqbsr2.png" %>
-				<div class="properties-text">
-					<h5>RANDALL HOUSE</h5>
-					<p>As consernam nonserumlauda ndunt. Cum nobis reheni omnimpo resero moluptatur aciendi caturui repudit.</p>
-					<h6>[ READ MORE ]</h6>
-				</div>
-				<div class="property-box-overlay"></div>
-			<% end %>
-		</div>
-	</div>
+
+  <!-- Retail -->
+  <div class="retail-case-studies">
+  	<div class="properties-boxes-top">
+    <% retail_case_study_count = 1 %>
+    <% @retail_case_studies.each do |case_study| %>
+    <% if retail_case_study_count == 4 %>
+        </div>
+        <div class="properties-boxes-bottom">
+      <% end %>
+  		<div class="properties-box" id=<%= case_study.title %>>
+  			<%= link_to "" do %>
+  				<%= cl_image_tag(case_study.photo, width: 150, height: 100, crop: :fill) %>
+  				<div class="properties-text">
+  					<h5><%= case_study.title.upcase %></h5>
+  					<p><%= case_study.summary %></p>
+  					<h6>[ READ MORE ]</h6>
+  				</div>
+  				<div class="property-box-overlay"></div>
+  			<% end %>
+  		</div>
+        <% retail_case_study_count += 1 %>
+      <% end %>
+    </div>
+  </div>
+
+    <!-- Residential -->
+  <div class="residential-case-studies hidden">
+    <div class="properties-boxes-top">
+    <% residential_case_study_count = 1 %>
+    <% @residential_case_studies.each do |case_study| %>
+    <% if residential_case_study_count == 4 %>
+        </div>
+        <div class="properties-boxes-bottom">
+      <% end %>
+      <div class="properties-box" id=<%= case_study.title %>>
+        <%= link_to "" do %>
+          <%= cl_image_tag(case_study.photo, width: 150, height: 100, crop: :fill) %>
+          <div class="properties-text">
+            <h5><%= case_study.title.upcase %></h5>
+            <p><%= case_study.summary %></p>
+            <h6>[ READ MORE ]</h6>
+          </div>
+          <div class="property-box-overlay"></div>
+        <% end %>
+      </div>
+        <% residential_case_study_count += 1 %>
+      <% end %>
+    </div>
+  </div>
+
+  <!-- Offices -->
+  <div class="office-case-studies hidden">
+    <div class="properties-boxes-top">
+    <% office_case_study_count = 1 %>
+    <% @office_case_studies.each do |case_study| %>
+    <% if office_case_study_count == 4 %>
+        </div>
+        <div class="properties-boxes-bottom">
+      <% end %>
+      <div class="properties-box" id=<%= case_study.title %>>
+        <%= link_to "" do %>
+          <%= cl_image_tag(case_study.photo, width: 150, height: 100, crop: :fill) %>
+          <div class="properties-text">
+            <h5><%= case_study.title.upcase %></h5>
+            <p><%= case_study.summary %></p>
+            <h6>[ READ MORE ]</h6>
+          </div>
+          <div class="property-box-overlay"></div>
+        <% end %>
+      </div>
+        <% office_case_study_count += 1 %>
+      <% end %>
+    </div>
+  </div>
+
 </div>
+
 <div class="property-wrapper">
 	<%= link_to "#" do %>
 		<%= image_tag "Addington_Capital_arrow_left.png", class: "arrow prop-arrow prop-arrow-left" %>

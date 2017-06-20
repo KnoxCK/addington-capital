@@ -10,7 +10,9 @@ class PagesController < ApplicationController
   end
 
   def our_properties
-    @case_studies = CaseStudy.all
+    @retail_case_studies = CaseStudy.where(category_id: 1)
+    @residential_case_studies = CaseStudy.where(category_id: 2)
+    @office_case_studies = CaseStudy.where(category_id: 3)
   end
 
   def management_team
