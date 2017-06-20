@@ -47,7 +47,7 @@
     </div>
   </div>
 
-    <!-- Residential -->
+  <!-- Residential -->
   <div class="residential-case-studies hidden">
     <div class="properties-boxes-top">
     <% residential_case_study_count = 1 %>
@@ -99,32 +99,37 @@
 
 </div>
 
+
 <div class="property-wrapper">
 	<%= link_to "#" do %>
 		<%= image_tag "Addington_Capital_arrow_left.png", class: "arrow prop-arrow prop-arrow-left" %>
 	<% end %>
-	<div class="property-lg harmsworth">
-		<h5>HARMSWORTH HOUSE</h5>
+
+  <!-- Retail Case Studies -->
+  <% @retail_case_studies.each do |case_study| %>
+	<div class="property-lg harmsworth hidden">
+		<h5><%= case_study.title.upcase %></h5>
 		<div class="property-lg-box">
-			<%= image_tag "http://res.cloudinary.com/dqxvcdy6w/image/upload/v1497430841/Screen_Shot_2017-06-14_at_10.00.09_iqbsr2.png" %>
+			<%= cl_image_tag case_study.photo %>
 			<div class="property-lg-right">
-				<h6>A vacant 6 storey office building located opposite Cannon Street Station in the City of London and comprising 15,261 sq ft.
-				</h6>
-				<p>The property was acquired with vacant possession and is undergoing a comprehensive refurbishment to include new M&E, lift, WCs and entrance hall. The completed project will be offered to the letting market in summer 2015.</p>
+				<h6><%= case_study.summary %></h6>
+				<p><%= case_study.description %></p>
 			</div>
 		</div>
 	</div>
-	<div class="property-lg randall hidden">
+  <% end %>
+
+	<!-- <div class="property-lg randall hidden">
 		<h5>RANDALL HOUSE</h5>
 		<div class="property-lg-box">
-			<%= image_tag "http://res.cloudinary.com/dqxvcdy6w/image/upload/v1497430841/Screen_Shot_2017-06-14_at_10.00.09_iqbsr2.png" %>
+			<%#= image_tag "http://res.cloudinary.com/dqxvcdy6w/image/upload/v1497430841/Screen_Shot_2017-06-14_at_10.00.09_iqbsr2.png" %>
 			<div class="property-lg-right">
 				<h6>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet, sed placeat ratione labore alias, minima recusandae.
 				</h6>
 				<p>Voluptates, dicta, beatae, quibusdam delectus architecto nulla ipsum asperiores dolorem voluptatem fugit esse illo.Voluptates, dicta, beatae, quibusdam delectus architecto nulla ipsum asperiores dolorem voluptatem fugit esse illo.Voluptates, dicta, beatae, quibusdam delectus architecto nulla ipsum asperiores dolorem voluptatem fugit esse illo.</p>
 			</div>
 		</div>
-	</div>
+	</div> -->
 	<%= link_to "#" do %>
 		<%= image_tag "Addington_Capital_arrow_right.png", class: "arrow prop-arrow prop-arrow-right" %>
 	<% end %>
