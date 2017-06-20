@@ -19,6 +19,8 @@
 		<h5><%= link_to "NEWS ARCHIVE", "" %></h5>
 	</div>
 	<div class="latest-news">
-		<%= render 'pages/press_cuttings' %>
+  <% @press_releases.each do |press_release| %>
+		<%= render 'pages/press_cuttings', press_release: press_release %>
+  <% end %>
 	</div>
 </div>
