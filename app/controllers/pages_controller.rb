@@ -16,6 +16,7 @@ class PagesController < ApplicationController
   end
 
   def press_media
+    @press_releases = PressRelease.all
   end
 
   def contact_us
