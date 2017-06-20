@@ -106,17 +106,23 @@
 	<% end %>
 
   <!-- Retail Case Studies -->
+  <% count = 0 %>
   <% @retail_case_studies.each do |case_study| %>
-	<div class="property-lg harmsworth hidden">
+  <% if count == 0 %>
+	  <div class="property-lg harmsworth">
+  <% else %>
+    <div class="property-lg harmsworth hidden">
+  <% end %>
 		<h5><%= case_study.title.upcase %></h5>
 		<div class="property-lg-box">
-			<%= cl_image_tag case_study.photo %>
+			<%= cl_image_tag(case_study.photo, height: 250, width: 250, crop: :fill) %>
 			<div class="property-lg-right">
 				<h6><%= case_study.summary %></h6>
 				<p><%= case_study.description %></p>
 			</div>
 		</div>
 	</div>
+  <% count += 1 %>
   <% end %>
 
 	<!-- <div class="property-lg randall hidden">
