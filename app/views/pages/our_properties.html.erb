@@ -81,7 +81,7 @@
         </div>
         <div class="case-studies-boxes-bottom">
       <% end %>
-      <div class="case-studies-box" id=data-target="#<%= case_study.id %>" data-category="#offices">
+      <div class="case-studies-box" data-target="#<%= case_study.id %>" data-category="#offices">
         <%= link_to "" do %>
           <%= cl_image_tag(case_study.photo, width: 150, height: 100, crop: :fill) %>
           <div class="case-studies-text">
