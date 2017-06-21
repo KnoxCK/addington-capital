@@ -6,7 +6,7 @@ class CreateTableCaseStudies < ActiveRecord::Migration[5.0]
       t.text :description
       t.string :thumbnail
       t.string :photo
-      t.references :category, foreign_key: true
+      t.references :category, foreign_key: true, index: true
       t.timestamps
     end
   end
