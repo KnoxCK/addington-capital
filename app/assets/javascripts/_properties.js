@@ -1,3 +1,4 @@
+// Case study tabs
 $('.retail-tab').click(function(e){
   e.preventDefault();
   $('.case-study-wrapper').addClass('hidden');
@@ -32,8 +33,6 @@ $(".case-studies-box").click(function(e) {
   $('html,body').animate({
       scrollTop: $(".case-study-detailed").offset().top - 100},
       'slow');
-
-
 });
 
 
