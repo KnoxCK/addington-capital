@@ -31,7 +31,7 @@
         </div>
         <div class="case-studies-boxes-bottom">
       <% end %>
-  		<div class="case-studies-box" id=<%= case_study.id %>>
+  		<div class="case-studies-box" data-target="#<%= case_study.id %>" data-category="#retail">
   			<%= link_to "" do %>
   				<%= cl_image_tag(case_study.photo, width: 150, height: 100, crop: :fill) %>
   				<div class="case-studies-text">
@@ -56,7 +56,7 @@
         </div>
         <div class="case-studies-boxes-bottom">
       <% end %>
-      <div class="case-studies-box" id=<%= case_study.id %>>
+      <div class="case-studies-box" data-target="#<%= case_study.id %>" data-category="#residential">
         <%= link_to "" do %>
           <%= cl_image_tag(case_study.photo, width: 150, height: 100, crop: :fill) %>
           <div class="case-studies-text">
@@ -99,8 +99,9 @@
 
 </div>
 
+<div class="case-study-detailed">
 
-<div class="case-study-wrapper retail-lg hidden">
+<div class="case-study-wrapper hidden" id="retail">
 	<%= link_to "#" do %>
 		<%= image_tag "Addington_Capital_arrow_left.png", class: "arrow prop-arrow prop-arrow-left" %>
 	<% end %>
@@ -109,9 +110,9 @@
   <% count = 0 %>
   <% @retail_case_studies.each do |case_study| %>
   <% if count == 0 %>
-	  <div class=<%= "case-study-lg" %>>
+	  <div class="case-study-lg" id="<%= case_study.id %>">
   <% else %>
-    <div class=<%= "case-study-lg hidden" %>>
+    <div class="case-study-lg hidden" id="<%= case_study.id %>">
   <% end %>
 		<h5><%= case_study.title.upcase %></h5>
 		<div class="case-study-lg-box">
@@ -199,5 +200,7 @@
 	<%= link_to "#" do %>
 		<%= image_tag "Addington_Capital_arrow_right.png", class: "arrow prop-arrow prop-arrow-right" %>
 	<% end %>
+</div>
+
 </div>
 
