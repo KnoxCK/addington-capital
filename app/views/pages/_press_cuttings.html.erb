@@ -1,7 +1,7 @@
 <hr>
 <div class="latest-news-post">
 	<div class="news-date">
-		<h5>Posted in News on <%= press_release.formatted_date %></h5>
+		<h5>Posted in News on <%= press_release.formatted_date if press_release %></h5>
 	</div>
 	<div class="news-snippet">
 		<div class="news-title">
@@ -14,7 +14,7 @@
       <%= cl_image_tag(press_release.photo, width: 400, height: 200, crop: :fill) %>
 				<p><%= press_release.body %></p>
 				<br>
-        <p>Posted in News on <%= press_release.formatted_date %></p>
+        <p>Posted in News on <%= press_release.formatted_date if press_release %></p>
 				<h6><%= link_to "[ CLOSE ]", "#", id: "news-close" %></h6>
 			</div>
 		</div>
