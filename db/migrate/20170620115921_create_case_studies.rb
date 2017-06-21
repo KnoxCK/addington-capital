@@ -1,4 +1,4 @@
-class CreateTableCaseStudies < ActiveRecord::Migration[5.0]
+class CreateCaseStudies < ActiveRecord::Migration[5.0]
   def change
     create_table :case_studies do |t|
       t.string :title
@@ -6,7 +6,7 @@ class CreateTableCaseStudies < ActiveRecord::Migration[5.0]
       t.text :description
       t.string :thumbnail
       t.string :photo
-      t.references :category, foreign_key: true
+      t.references :category, index: true, foreign_key: true
       t.timestamps
     end
   end
