@@ -36,12 +36,26 @@ $(".case-studies-box").click(function(e) {
 });
 
 
-//Arrows
-$('#retail .prop-arrow-right').click(function(e){
+//Right Arrow
+$('.prop-arrow-right').click(function(e){
   e.preventDefault();
-
-
+  var active = $('.case-study-lg.active')
+  if (active.next().is("div")) {
+    active.removeClass('active');
+    active.next().addClass('active');
+  }
 });
+
+//Right Arrow
+$('.prop-arrow-left').click(function(e){
+  e.preventDefault();
+  var active = $('.case-study-lg.active')
+  if (active.prev().is("div")) {
+    active.removeClass('active');
+    active.prev().addClass('active');
+  }
+});
+
 
 
 
