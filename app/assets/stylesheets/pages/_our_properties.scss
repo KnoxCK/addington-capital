@@ -98,6 +98,10 @@
 	width: 606px;
 	margin-left: 40px;
 	margin-right: 40px;
+  display: none;
+  &.active {
+    display: block;
+  }
 }
 .case-study-lg-box {
 	background-color: #FFFFFF;

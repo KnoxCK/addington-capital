@@ -110,9 +110,9 @@
   <% retail_count = 0 %>
   <% @retail_case_studies.each do |case_study| %>
   <% if retail_count == 0 %>
-	  <div class="case-study-lg" id="<%= case_study.id %>">
+	  <div class="case-study-lg active" id="<%= case_study.id %>">
   <% else %>
-    <div class="case-study-lg hidden" id="<%= case_study.id %>">
+    <div class="case-study-lg" id="<%= case_study.id %>">
   <% end %>
 		<h5><%= case_study.title.upcase %></h5>
 		<div class="case-study-lg-box">

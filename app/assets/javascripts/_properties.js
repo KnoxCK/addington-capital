@@ -24,20 +24,24 @@ $('.offices-tab').click(function(e){
 });
 
 
-//small image linking to large image
+//Small image linking to large image
 $(".case-studies-box").click(function(e) {
   e.preventDefault();
-  $(".case-study-lg").addClass("hidden");
+  $(".case-study-lg").removeClass("active");
   $($(this).data('category')).removeClass('hidden');
-  $($(this).data('target')).removeClass("hidden");
+  $($(this).data('target')).addClass("active");
   $('html,body').animate({
       scrollTop: $(".case-study-detailed").offset().top - 100},
       'slow');
 });
 
 
+//Arrows
+$('#retail .prop-arrow-right').click(function(e){
+  e.preventDefault();
 
 
+});
 
 
 
