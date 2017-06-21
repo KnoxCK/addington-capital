@@ -5,13 +5,13 @@
 	</div>
 	<div class="news-snippet">
 		<div class="news-title">
-			<h5><%= press_release.title %></h5>
+			<h5><%= press_release.title if press_release %></h5>
 			<div class="news-brief">
-				<p><%= press_release.first_paragraph %></p>
+				<p><%= press_release.first_paragraph if press_release %></p>
 				<h6><%= link_to "[ READ MORE... ]", "#", id: "news-read-more" %></h6>
 			</div>
 			<div class="full-news hidden slideDown">
-      <%= cl_image_tag(press_release.photo, width: 400, height: 200, crop: :fill) %>
+      <%= cl_image_tag(press_release.photo, width: 400, height: 200, crop: :fill) if press_release %>
 				<p><%= press_release.body %></p>
 				<br>
         <p>Posted in News on <%= press_release.formatted_date if press_release %></p>
