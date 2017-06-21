@@ -31,7 +31,7 @@
         </div>
         <div class="case-studies-boxes-bottom">
       <% end %>
-  		<div class="case-studies-box" id=<%= case_study.title %>>
+  		<div class="case-studies-box" id=<%= case_study.id %>>
   			<%= link_to "" do %>
   				<%= cl_image_tag(case_study.photo, width: 150, height: 100, crop: :fill) %>
   				<div class="case-studies-text">
@@ -56,7 +56,7 @@
         </div>
         <div class="case-studies-boxes-bottom">
       <% end %>
-      <div class="case-studies-box" id=<%= case_study.title %>>
+      <div class="case-studies-box" id=<%= case_study.id %>>
         <%= link_to "" do %>
           <%= cl_image_tag(case_study.photo, width: 150, height: 100, crop: :fill) %>
           <div class="case-studies-text">
@@ -81,7 +81,7 @@
         </div>
         <div class="case-studies-boxes-bottom">
       <% end %>
-      <div class="case-studies-box" id=<%= case_study.title %>>
+      <div class="case-studies-box" id=<%= case_study.id %>>
         <%= link_to "" do %>
           <%= cl_image_tag(case_study.photo, width: 150, height: 100, crop: :fill) %>
           <div class="case-studies-text">
@@ -109,9 +109,9 @@
   <% count = 0 %>
   <% @retail_case_studies.each do |case_study| %>
   <% if count == 0 %>
-	  <div class="case-study-lg harmsworth">
+	  <div class=<%= "case-study-lg" %>>
   <% else %>
-    <div class="case-study-lg harmsworth hidden">
+    <div class=<%= "case-study-lg hidden" %>>
   <% end %>
 		<h5><%= case_study.title.upcase %></h5>
 		<div class="case-study-lg-box">
@@ -122,6 +122,47 @@
 			</div>
 		</div>
 	</div>
+  <% count += 1 %>
+  <% end %>
+
+
+  <!-- Residential Case Studies -->
+  <% count = 0 %>
+  <% @residential_case_studies.each do |case_study| %>
+  <% if count == 0 %>
+    <div class=<%= "case-study-lg" %>>
+  <% else %>
+    <div class=<%= "case-study-lg hidden" %>>
+  <% end %>
+    <h5><%= case_study.title.upcase %></h5>
+    <div class="case-study-lg-box">
+      <%= cl_image_tag(case_study.photo, height: 250, width: 250, crop: :fill) %>
+      <div class="case-study-lg-right">
+        <h6><%= case_study.summary %></h6>
+        <p><%= case_study.description %></p>
+      </div>
+    </div>
+  </div>
+  <% count += 1 %>
+  <% end %>
+
+  <!-- Offices Case Studies -->
+  <% count = 0 %>
+  <% @office_case_studies.each do |case_study| %>
+  <% if count == 0 %>
+    <div class=<%= "case-study-lg" %>>
+  <% else %>
+    <div class=<%= "case-study-lg hidden" %>>
+  <% end %>
+    <h5><%= case_study.title.upcase %></h5>
+    <div class="case-study-lg-box">
+      <%= cl_image_tag(case_study.photo, height: 250, width: 250, crop: :fill) %>
+      <div class="case-study-lg-right">
+        <h6><%= case_study.summary %></h6>
+        <p><%= case_study.description %></p>
+      </div>
+    </div>
+  </div>
   <% count += 1 %>
   <% end %>
 
