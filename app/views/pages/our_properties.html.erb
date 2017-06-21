@@ -75,13 +75,13 @@
   <!-- Offices -->
   <div class="offices-case-studies hidden">
     <div class="case-studies-boxes-top">
-    <% office_case_study_count = 1 %>
-    <% @office_case_studies.each do |case_study| %>
-    <% if office_case_study_count == 4 %>
+    <% offices_case_study_count = 1 %>
+    <% @offices_case_studies.each do |case_study| %>
+    <% if offices_case_study_count == 4 %>
         </div>
         <div class="case-studies-boxes-bottom">
       <% end %>
-      <div class="case-studies-box" id=<%= case_study.id %>>
+      <div class="case-studies-box" id=data-target="#<%= case_study.id %>" data-category="#offices">
         <%= link_to "" do %>
           <%= cl_image_tag(case_study.photo, width: 150, height: 100, crop: :fill) %>
           <div class="case-studies-text">
@@ -92,7 +92,7 @@
           <div class="case-study-box-overlay"></div>
         <% end %>
       </div>
-        <% office_case_study_count += 1 %>
+        <% offices_case_study_count += 1 %>
       <% end %>
     </div>
   </div>
@@ -107,9 +107,9 @@
 	<% end %>
 
   <!-- Retail Case Studies -->
-  <% count = 0 %>
+  <% retail_count = 0 %>
   <% @retail_case_studies.each do |case_study| %>
-  <% if count == 0 %>
+  <% if retail_count == 0 %>
 	  <div class="case-study-lg" id="<%= case_study.id %>">
   <% else %>
     <div class="case-study-lg hidden" id="<%= case_study.id %>">
@@ -123,7 +123,7 @@
 			</div>
 		</div>
 	</div>
-  <% count += 1 %>
+  <% retail_count += 1 %>
   <% end %>
 
   <%= link_to "#" do %>
@@ -131,18 +131,18 @@
   <% end %>
 </div>
 
-<div class="case-study-wrapper residential-lg hidden">
+<div class="case-study-wrapper hidden" id="residential">
   <%= link_to "#" do %>
     <%= image_tag "Addington_Capital_arrow_left.png", class: "arrow prop-arrow prop-arrow-left" %>
   <% end %>
 
   <!-- Residential Case Studies -->
-  <% count = 0 %>
+  <% residential_count = 0 %>
   <% @residential_case_studies.each do |case_study| %>
-  <% if count == 0 %>
-    <div class=<%= "case-study-lg" %>>
+  <% if residential_count == 0 %>
+    <div class="case-study-lg" id="<%= case_study.id %>">
   <% else %>
-    <div class=<%= "case-study-lg hidden" %>>
+    <div class="case-study-lg hidden" id="<%= case_study.id %>">
   <% end %>
     <h5><%= case_study.title.upcase %></h5>
     <div class="case-study-lg-box">
@@ -153,7 +153,7 @@
       </div>
     </div>
   </div>
-  <% count += 1 %>
+  <% residential_count += 1 %>
   <% end %>
 
   <%= link_to "#" do %>
@@ -161,18 +161,18 @@
   <% end %>
 </div>
 
-<div class="case-study-wrapper offices-lg hidden">
+<div class="case-study-wrapper hidden" id="offices">
   <%= link_to "#" do %>
     <%= image_tag "Addington_Capital_arrow_left.png", class: "arrow prop-arrow prop-arrow-left" %>
   <% end %>
 
   <!-- Offices Case Studies -->
-  <% count = 0 %>
-  <% @office_case_studies.each do |case_study| %>
-  <% if count == 0 %>
-    <div class=<%= "case-study-lg" %>>
+  <% offices_count = 0 %>
+  <% @offices_case_studies.each do |case_study| %>
+  <% if offices_count == 0 %>
+    <div class="case-study-lg" id="<%= case_study.id %>">
   <% else %>
-    <div class=<%= "case-study-lg hidden" %>>
+    <div class="case-study-lg hidden" id="<%= case_study.id %>">
   <% end %>
     <h5><%= case_study.title.upcase %></h5>
     <div class="case-study-lg-box">
@@ -183,7 +183,7 @@
       </div>
     </div>
   </div>
-  <% count += 1 %>
+  <% offices_count += 1 %>
   <% end %>
 
 	<!-- <div class="case-study-lg randall hidden">
