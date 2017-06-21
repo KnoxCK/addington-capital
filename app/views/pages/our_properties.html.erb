@@ -10,36 +10,36 @@
 		<%= link_to "" do %>
 			<%= image_tag "Addington_Capital_Facebook_logo.png", class: "social_media_icon" %>
 		<% end %>
-		<h2>OUR PROPERTIES</h2>
+		<h2>OUR case-studies</h2>
 	</div>
 </div>
 
-<div class="properties-tabs">
+<div class="case-studies-tabs">
 	<h5><%= link_to "RETAIL", "" %></h5>
 	<h5><%= link_to "RESIDENTIAL", "" %></h5>
 	<h5><%= link_to "OFFICES", "" %></h5>
 </div>
 
-<div class="properties-wrapper">
+<div class="case-studies-wrapper">
 
   <!-- Retail -->
   <div class="retail-case-studies">
-  	<div class="properties-boxes-top">
+  	<div class="case-studies-boxes-top">
     <% retail_case_study_count = 1 %>
     <% @retail_case_studies.each do |case_study| %>
     <% if retail_case_study_count == 4 %>
         </div>
-        <div class="properties-boxes-bottom">
+        <div class="case-studies-boxes-bottom">
       <% end %>
-  		<div class="properties-box" id=<%= case_study.title %>>
+  		<div class="case-studies-box" id=<%= case_study.title %>>
   			<%= link_to "" do %>
   				<%= cl_image_tag(case_study.photo, width: 150, height: 100, crop: :fill) %>
-  				<div class="properties-text">
+  				<div class="case-studies-text">
   					<h5><%= case_study.title.upcase %></h5>
   					<p><%= case_study.summary %></p>
   					<h6>[ READ MORE ]</h6>
   				</div>
-  				<div class="property-box-overlay"></div>
+  				<div class="case-study-box-overlay"></div>
   			<% end %>
   		</div>
         <% retail_case_study_count += 1 %>
@@ -49,22 +49,22 @@
 
   <!-- Residential -->
   <div class="residential-case-studies hidden">
-    <div class="properties-boxes-top">
+    <div class="case-studies-boxes-top">
     <% residential_case_study_count = 1 %>
     <% @residential_case_studies.each do |case_study| %>
     <% if residential_case_study_count == 4 %>
         </div>
-        <div class="properties-boxes-bottom">
+        <div class="case-studies-boxes-bottom">
       <% end %>
-      <div class="properties-box" id=<%= case_study.title %>>
+      <div class="case-studies-box" id=<%= case_study.title %>>
         <%= link_to "" do %>
           <%= cl_image_tag(case_study.photo, width: 150, height: 100, crop: :fill) %>
-          <div class="properties-text">
+          <div class="case-studies-text">
             <h5><%= case_study.title.upcase %></h5>
             <p><%= case_study.summary %></p>
             <h6>[ READ MORE ]</h6>
           </div>
-          <div class="property-box-overlay"></div>
+          <div class="case-study-box-overlay"></div>
         <% end %>
       </div>
         <% residential_case_study_count += 1 %>
@@ -74,22 +74,22 @@
 
   <!-- Offices -->
   <div class="office-case-studies hidden">
-    <div class="properties-boxes-top">
+    <div class="case-studies-boxes-top">
     <% office_case_study_count = 1 %>
     <% @office_case_studies.each do |case_study| %>
     <% if office_case_study_count == 4 %>
         </div>
-        <div class="properties-boxes-bottom">
+        <div class="case-studies-boxes-bottom">
       <% end %>
-      <div class="properties-box" id=<%= case_study.title %>>
+      <div class="case-studies-box" id=<%= case_study.title %>>
         <%= link_to "" do %>
           <%= cl_image_tag(case_study.photo, width: 150, height: 100, crop: :fill) %>
-          <div class="properties-text">
+          <div class="case-studies-text">
             <h5><%= case_study.title.upcase %></h5>
             <p><%= case_study.summary %></p>
             <h6>[ READ MORE ]</h6>
           </div>
-          <div class="property-box-overlay"></div>
+          <div class="case-study-box-overlay"></div>
         <% end %>
       </div>
         <% office_case_study_count += 1 %>
@@ -100,7 +100,7 @@
 </div>
 
 
-<div class="property-wrapper">
+<div class="case-study-wrapper">
 	<%= link_to "#" do %>
 		<%= image_tag "Addington_Capital_arrow_left.png", class: "arrow prop-arrow prop-arrow-left" %>
 	<% end %>
@@ -109,14 +109,14 @@
   <% count = 0 %>
   <% @retail_case_studies.each do |case_study| %>
   <% if count == 0 %>
-	  <div class="property-lg harmsworth">
+	  <div class="case-study-lg harmsworth">
   <% else %>
-    <div class="property-lg harmsworth hidden">
+    <div class="case-study-lg harmsworth hidden">
   <% end %>
 		<h5><%= case_study.title.upcase %></h5>
-		<div class="property-lg-box">
+		<div class="case-study-lg-box">
 			<%= cl_image_tag(case_study.photo, height: 250, width: 250, crop: :fill) %>
-			<div class="property-lg-right">
+			<div class="case-study-lg-right">
 				<h6><%= case_study.summary %></h6>
 				<p><%= case_study.description %></p>
 			</div>
@@ -125,11 +125,11 @@
   <% count += 1 %>
   <% end %>
 
-	<!-- <div class="property-lg randall hidden">
+	<!-- <div class="case-study-lg randall hidden">
 		<h5>RANDALL HOUSE</h5>
-		<div class="property-lg-box">
+		<div class="case-study-lg-box">
 			<%#= image_tag "http://res.cloudinary.com/dqxvcdy6w/image/upload/v1497430841/Screen_Shot_2017-06-14_at_10.00.09_iqbsr2.png" %>
-			<div class="property-lg-right">
+			<div class="case-study-lg-right">
 				<h6>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet, sed placeat ratione labore alias, minima recusandae.
 				</h6>
 				<p>Voluptates, dicta, beatae, quibusdam delectus architecto nulla ipsum asperiores dolorem voluptatem fugit esse illo.Voluptates, dicta, beatae, quibusdam delectus architecto nulla ipsum asperiores dolorem voluptatem fugit esse illo.Voluptates, dicta, beatae, quibusdam delectus architecto nulla ipsum asperiores dolorem voluptatem fugit esse illo.</p>

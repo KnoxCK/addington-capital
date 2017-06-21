@@ -1,4 +1,4 @@
-.properties-tabs {
+.case-studies-tabs {
 	display: flex;
 	justify-content: center;
 	h5 {
@@ -20,26 +20,26 @@
 
 	}
 }
-.properties-wrapper {
+.case-studies-wrapper {
 	background-color: #E9E9E8;
 	display: flex;
 	justify-content: center;
 	flex-direction: column;
 	width: 100%;
 }
-.properties-boxes-top {
+.case-studies-boxes-top {
 	display: flex;
 	justify-content: center;
 	width: auto;
 
 }
-.properties-boxes-bottom {
+.case-studies-boxes-bottom {
 	display: flex;
 	justify-content: center;
 	width: auto;
 	margin-top: 4px;
 }
-.properties-box {
+.case-studies-box {
 	position: relative;
 	background-color: #7D98AA;
 	width: 200px;
@@ -54,7 +54,7 @@
 		width: 80%;
 	}
 }
-.property-box-overlay {
+.case-study-box-overlay {
 	position: absolute;
 	background: rgba(0, 0, 0, 0.5);
     top: 0;
@@ -64,12 +64,12 @@
     z-index: 100;
     display: none;
 }
-.properties-box:hover {
+.case-studies-box:hover {
 	.property-box-overlay {
 		display: block;
 	}
 }
-.properties-text {
+.case-studies-text {
 	position: absolute;
 	top: 140px;
 	left: 17px;
@@ -89,17 +89,17 @@
 .prop-box-bottom {
 	margin-top: 4px;
 }
-.property-wrapper {
+.case-study-wrapper {
 	display: flex;
 	justify-content: center;
 	padding-bottom: 20px;
 }
-.property-lg {
+.case-study-lg {
 	width: 606px;
 	margin-left: 40px;
 	margin-right: 40px;
 }
-.property-lg-box {
+.case-study-lg-box {
 	background-color: #FFFFFF;
 	display: flex;
 	h5 {
@@ -110,7 +110,7 @@
     	height: 250px;
 	}
 }
-.property-lg-right {
+.case-study-lg-right {
 	padding-left: 15px;
 	h6 {
 		font-size: 13px;
