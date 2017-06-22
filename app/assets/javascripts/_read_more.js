@@ -8,3 +8,11 @@ $(document).on('click', '#news-close', function(e) {
 	$(".news-brief").removeClass("hidden");
 	e.preventDefault();
 });
+
+$(document).ready(function(){
+  $('.archive').click(function(e) {
+    e.preventDefault();
+    $('.latest-news').addClass('hidden');
+    $('.archive').removeClass('hidden');
+  });
+});

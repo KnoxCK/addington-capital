@@ -6,3 +6,4 @@ $(document).ready(function(){
     $(".residential-page").removeClass("hidden-sm hidden-md hidden-lg hidden-xl");
   }
 });
+
