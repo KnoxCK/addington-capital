@@ -23,7 +23,7 @@
 <div class="case-studies-wrapper">
 
   <!-- Retail -->
-  <div class="retail-case-studies">
+  <div class="retail-case-studies" id="home-retail">
   	<div class="case-studies-boxes-top">
     <% retail_case_study_count = 1 %>
     <% @retail_case_studies.each do |case_study| %>
@@ -48,7 +48,7 @@
   </div>
 
   <!-- Residential -->
-  <div class="residential-case-studies hidden">
+  <div class="residential-case-studies hidden" id="home-residential">
     <div class="case-studies-boxes-top">
     <% residential_case_study_count = 1 %>
     <% @residential_case_studies.each do |case_study| %>
@@ -73,7 +73,7 @@
   </div>
 
   <!-- Offices -->
-  <div class="offices-case-studies hidden">
+  <div class="offices-case-studies hidden" id="home-offices">
     <div class="case-studies-boxes-top">
     <% offices_case_study_count = 1 %>
     <% @offices_case_studies.each do |case_study| %>
