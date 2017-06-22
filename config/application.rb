@@ -22,7 +22,7 @@ module AddingtonCapital
       generate.assets false
       generate.helper false
     end
-    config.serve_static_assets = true
+    # config.serve_static_assets = true
     config.assets.paths << Rails.root.join('app', 'assets', 'fonts')
     config.assets.precompile << /\.(?:svg|eot|woff|ttf|ttc|otf)$/
     # Settings in config/environments/* take precedence over those specified here.
