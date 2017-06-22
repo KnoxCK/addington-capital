@@ -16,11 +16,34 @@
 <div class="pressmedia">
 	<div class="press-tabs">
 		<h5><span><%= link_to "LATEST NEWS", press_media_path %></span></h5>
-		<h5><%= link_to "NEWS ARCHIVE", "" %></h5>
+		<h5><%= link_to "NEWS ARCHIVE", "", class: 'archive' %></h5>
 	</div>
 	<div class="latest-news">
   <% @press_releases.each do |press_release| %>
 		<%= render 'pages/press_cuttings', press_release: press_release %>
   <% end %>
 	</div>
+  <div class="news-archive hidden">
+    <div class="2015">
+      <% @press_releases.each do |press_release| %>
+        <% if press_release.date.year == 2015 %>
+          <%= render 'pages/press_cuttings', press_release: press_release %>
+        <% end %>
+      <% end %>
+    </div>
+    <div class="2016">
+      <% @press_releases.each do |press_release| %>
+        <% if press_release.date.year == 2016 %>
+          <%= render 'pages/press_cuttings', press_release: press_release %>
+        <% end %>
+      <% end %>
+    </div>
+    <div class="2015">
+      <% @press_releases.each do |press_release| %>
+        <% if press_release.date.year == 2017 %>
+          <%= render 'pages/press_cuttings', press_release: press_release %>
+        <% end %>
+      <% end %>
+    </div>
+  </div>
 </div>

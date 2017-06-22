@@ -56,22 +56,37 @@
 		<h1>WHAT WE DO</h1>
 		<h4>Addington adopts a research led approach to the macroeconomic factors<br> affecting its investment decisions and a bottom up analysis of specific projects.</h4>
 		<div class="what-we-do-links">
-			<%= link_to "OFFICES", "" %> 
-			<%= link_to "RETAIL", "" %> 
-			<%= link_to "RESIDENTIAL", "" %> 
-			
+
+		<h5 class="active">RETAIL</h5>
+    <h5>RESIDENTIAL</h5>
+    <h5>OFFICES</h5>
+
 		</div>
-		<div class="about-resi">
-			<h3>RESIDENTIAL</h3>
+
+		<div class="about about-retail active">
+			<h3>RETAIL</h3>
 			<h5>Renim et odi doluptatem di cust eatis explacest utet et quos esto consequidis excestiatia esto quatus sus consernam nonserum Xerum venim et odi doluptatem di cust eatis explacest utet et quos esto consequidis excestiatia esto quatus sus consernam nonserum.</h5>
-		</div>
-		<div class="about-commercial hidden">
-			<h3>COMMERCIAL</h3>
-			<h5>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus iusto aliquid sequi delectus inventore a facilis nulla, recusandae eligendi voluptatem magnam nobis impedit, maxime quo dolore nostrum. Veniam, ducimus, culpa eligendi voluptatem magnam nobis impedit.</h5>
-		</div>
-		<%= link_to our_case_studies_path do %>
+      <%= link_to our_case_studies_path(:anchor => 'home-retail') do %>
     <h6>[ VIEW CASE STUDIES... ]</h6>
     <% end %>
+		</div>
+
+		<div class="about about-residential">
+			<h3>RESIDENTIAL</h3>
+			<h5>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus iusto aliquid sequi delectus inventore a facilis nulla, recusandae eligendi voluptatem magnam nobis impedit, maxime quo dolore nostrum. Veniam, ducimus, culpa eligendi voluptatem magnam nobis impedit.</h5>
+      <%= link_to our_case_studies_path(:anchor => 'home-residential') do %>
+    <h6>[ VIEW CASE STUDIES... ]</h6>
+    <% end %>
+		</div>
+
+    <div class="about about-offices">
+      <h3>OFFICES</h3>
+      <h5>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus iusto aliquid sequi delectus inventore a facilis nulla, recusandae eligendi voluptatem magnam nobis impedit, maxime quo dolore nostrum. Veniam, ducimus, culpa eligendi voluptatem magnam nobis impedit.</h5>
+      <%= link_to our_case_studies_path(:anchor => 'home-offices') do %>
+    <h6>[ VIEW CASE STUDIES... ]</h6>
+    <% end %>
+    </div>
+
 	</div>
 	<%= link_to "#" do %>
 		<%= image_tag "Addington_Capital_arrow_right.png", class: "arrow about-arrow about-arrow-right" %>

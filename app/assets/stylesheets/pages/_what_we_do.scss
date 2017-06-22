@@ -1,0 +1,6 @@
+.about {
+  display: none;
+  &.active {
+    display: block;
+  }
+}
