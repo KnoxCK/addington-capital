@@ -5,7 +5,8 @@ $(document).ready(function(){
     $('.retail-case-studies').addClass('hidden');
     $(''+hash+'').removeClass('hidden');
     $('html,body').animate({
-      scrollTop: $(''+hash+'').offset().top - 173});
+      scrollTop: $(''+hash+'').offset().top - 170},
+      'slow');
       // $(".residential-page").removeClass("hidden-sm hidden-md hidden-lg hidden-xl");
   }
 
@@ -14,7 +15,14 @@ $(document).ready(function(){
     var active = $('.about.active')
     if (active.next().is("div")) {
       active.removeClass('active');
-      active.next().addClass('active');
+      var next = active.next();
+      next.addClass('active');
+      $('.what-we-do-links h5').removeClass('active');
+      $('.what-we-do-links h5').each(function(){
+        if ($(this).text() === next.children('h3').text()) {
+          $(this).addClass('active');
+        }
+      });
     }
   });
 
@@ -23,8 +31,14 @@ $(document).ready(function(){
     var active = $('.about.active')
     if (active.prev().is("div")) {
       active.removeClass('active');
-      active.prev().addClass('active');
+      var prev = active.prev();
+      prev.addClass('active');
+      $('.what-we-do-links h5').removeClass('active');
+      $('.what-we-do-links h5').each(function(){
+        if ($(this).text() === prev.children('h3').text()) {
+          $(this).addClass('active');
+        }
+      });
     }
   });
 });
-

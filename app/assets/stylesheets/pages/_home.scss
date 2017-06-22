@@ -23,7 +23,7 @@
 	width: 930px;
 	h4 {
 		padding-top: 20px;
-		padding-bottom: 30px;
+		padding-bottom: 15px;
 	}
 	h3 {
 		color: #1D5357;
@@ -47,8 +47,12 @@
 }
 
 .what-we-do-links {
-  color: white;
-  a {
-    padding: 0 10px;
+  display: flex;
+  justify-content: center;
+  h5 {
+    padding: 0 15px;
+    &.active {
+      border-bottom: 2px solid #DA6024;
+    }
   }
 }
