@@ -9,7 +9,7 @@ class PagesController < ApplicationController
   def what_we_do
   end
 
-  def our_properties
+  def our_case_studies
     @retail_case_studies = CaseStudy.where(category_id: 1)
     @residential_case_studies = CaseStudy.where(category_id: 2)
     @offices_case_studies = CaseStudy.where(category_id: 3)
