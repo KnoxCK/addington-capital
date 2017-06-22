@@ -7,9 +7,11 @@
 	a {
 		color: #392F2C;
 		text-decoration: none;
+    &.active {
+      border-bottom: 2px solid #DA6024;
+    }
 	}
 	a:hover {
-		text-decoration: underline;
 		color: #7D98AA;
 	}
 	span {

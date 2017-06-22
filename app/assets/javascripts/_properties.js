@@ -32,6 +32,8 @@ $('.prop-arrow-left').click(function(e){
 // Case study tabs
 $('.retail-tab').click(function(e){
   e.preventDefault();
+  $('.case-studies-tabs a').removeClass('active');
+  $(this).addClass('active');
   $('.case-study-wrapper').addClass('hidden');
   $('.residential-case-studies').addClass('hidden');
   $('.offices-case-studies').addClass('hidden');
@@ -40,6 +42,8 @@ $('.retail-tab').click(function(e){
 
 $('.residential-tab').click(function(e){
   e.preventDefault();
+  $('.case-studies-tabs a').removeClass('active');
+  $(this).addClass('active');
   $('.case-study-wrapper').addClass('hidden');
   $('.retail-case-studies').addClass('hidden');
   $('.offices-case-studies').addClass('hidden');
@@ -48,6 +52,8 @@ $('.residential-tab').click(function(e){
 
 $('.offices-tab').click(function(e){
   e.preventDefault();
+  $('.case-studies-tabs a').removeClass('active');
+  $(this).addClass('active');
   $('.case-study-wrapper').addClass('hidden');
   $('.residential-case-studies').addClass('hidden');
   $('.retail-case-studies').addClass('hidden');

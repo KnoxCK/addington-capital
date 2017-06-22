@@ -1,13 +1,12 @@
 $(document).ready(function(){
   var hash = window.location.hash
   if (hash) {
-    // $('.case-studies-tabs '+hash+'').addClass('properties-button-active');
+    $('.case-studies-tabs .'+hash.substring(6)+'-tab').addClass('active');
     $('.retail-case-studies').addClass('hidden');
     $(''+hash+'').removeClass('hidden');
     $('html,body').animate({
       scrollTop: $(''+hash+'').offset().top - 170},
       'slow');
-      // $(".residential-page").removeClass("hidden-sm hidden-md hidden-lg hidden-xl");
   }
 
   $('.about-arrow-right').click(function(e){
