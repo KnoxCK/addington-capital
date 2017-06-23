@@ -31,13 +31,15 @@
 <div class="press-wrapper" id="press">
 <div class="pressmedia">
 	<h2>PRESS & MEDIA</h2>
-	<div class="press-tabs">
+	<div class="home-press-tabs">
 		<h5><span><%= link_to "LATEST NEWS", "" %></span></h5>
-		<h5><%= link_to "NEWS ARCHIVE", "" %></h5>
+		<h5><%= link_to "NEWS ARCHIVE", press_media_path(:anchor => 'news-archive') %></h5>
 	</div>
 	<div class="latest-news">
 		<div class="dotted-line"></div>
-		<%= render 'pages/press_cuttings', press_release: @press_release %>
+    <% @latest_press_releases.each do |press_release| %>
+		  <%= render 'pages/press_cuttings', press_release: press_release %>
+    <% end %>
 	</div>
 	<div id="whatwedo"></div>
 	<div class="hand-icon-press text-center">
@@ -55,11 +57,13 @@
 	<div class="what-we-do text-center">
 		<h1>WHAT WE DO</h1>
 		<h4>Addington adopts a research led approach to the macroeconomic factors<br> affecting its investment decisions and a bottom up analysis of specific projects.</h4>
+
 		<div class="what-we-do-links">
-			<h5 class="active">RETAIL</h5>
-	    	<h5>RESIDENTIAL</h5>
-	    	<h5>OFFICES</h5>
+  		<h5 class="active">RETAIL</h5>
+      <h5>RESIDENTIAL</h5>
+      <h5>OFFICES</h5>
 		</div>
+  
 		<div class="about about-retail active">
 			<h3>RETAIL</h3>
 			<h5>Renim et odi doluptatem di cust eatis explacest utet et quos esto consequidis excestiatia esto quatus sus consernam nonserum Xerum venim et odi doluptatem di cust eatis explacest utet et quos esto consequidis excestiatia esto quatus sus consernam nonserum.</h5>

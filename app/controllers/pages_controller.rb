@@ -3,7 +3,7 @@ class PagesController < ApplicationController
 
   def home
     @transaction = Transaction.first
-    @press_release = PressRelease.last
+    @latest_press_releases = PressRelease.order(date: :desc).first(5)
   end
 
   def what_we_do

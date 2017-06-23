@@ -1,9 +1,18 @@
 $(document).ready(function(){
   var hash = window.location.hash
+  if (hash && hash === '#news-archive') {
+    $('.latest-news').addClass('hidden');
+    $('.news-archive').removeClass('hidden');
+    $('.archive').addClass('active');
+  }
+
   if (hash) {
+    $('.retail-tab').removeClass('active');
     $('.case-studies-tabs .'+hash.substring(6)+'-tab').addClass('active');
     $('.retail-case-studies').addClass('hidden');
+    $('.retail-wrapper').addClass('hidden');
     $(''+hash+'').removeClass('hidden');
+    $('.'+hash.substring(6)+'-wrapper').removeClass('hidden');
     $('html,body').animate({
       scrollTop: $(''+hash+'').offset().top - 170},
       'slow');

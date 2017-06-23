@@ -27,6 +27,28 @@
 		text-decoration: underline;
 	}
 }
+
+.home-press-tabs {
+  display: flex;
+  padding: 11px 20vw 0 25vw;
+  h5 {
+    padding-right: 35px;
+
+  }
+  a {
+    text-decoration: none;
+    color: #392F2C;
+     &.active {
+      color: #DA6024;
+      text-decoration: underline;
+    }
+  }
+  a:hover {
+    color: #DA6024;
+    text-decoration: underline;
+  }
+}
+
 .dotted-line {
 	border-bottom: #392F2C dotted 2px;
 	margin: 0 20vw 10px 25vw;
