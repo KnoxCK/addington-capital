@@ -12,16 +12,15 @@
 	padding: 11px 20vw 0 25vw;
 	h5 {
 		padding-right: 35px;
-	}	
-	span {
-		a {
-			color: #DA6024;
-			text-decoration: underline;
-		}
+
 	}
 	a {
 		text-decoration: none;
 		color: #392F2C;
+     &.active {
+      color: #DA6024;
+      text-decoration: underline;
+    }
 	}
 	a:hover {
 		color: #DA6024;
@@ -83,4 +82,17 @@
 	h6 {
 		color: #DA6024;
 	}
+}
+.news-archive {
+  display: flex;
+  flex-direction: column;
+}
+.year {
+  width: 500px;
+  border-bottom: 1px solid #B2A7A2;
+  padding: 10px 0;
+  &:hover {
+    text-decoration: underline;
+    cursor: pointer;
+  }
 }
