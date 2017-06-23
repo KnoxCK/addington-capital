@@ -1,5 +1,10 @@
 $(document).ready(function(){
   var hash = window.location.hash
+  if (hash && hash === '#news-archive') {
+    $('.latest-news').addClass('hidden');
+    $('.news-archive').removeClass('hidden');
+  }
+
   if (hash) {
     $('.retail-tab').removeClass('active');
     $('.case-studies-tabs .'+hash.substring(6)+'-tab').addClass('active');
