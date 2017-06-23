@@ -14,8 +14,7 @@ $(document).ready(function(){
     $(''+hash+'').removeClass('hidden');
     $('.'+hash.substring(6)+'-wrapper').removeClass('hidden');
     $('html,body').animate({
-      scrollTop: $(''+hash+'').offset().top - 170},
-      'slow');
+      scrollTop: $(''+hash+'').offset().top - 170});
   }
 
   $('.what-we-do-links h5').click(function(e) {
