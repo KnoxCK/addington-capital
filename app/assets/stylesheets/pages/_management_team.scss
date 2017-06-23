@@ -5,39 +5,34 @@
 }
 .team-box {
 	position: relative;
-	background-color: #F2F1F1;
-	width: 138px;
-    height: 239px;
-	margin: 0 10px;
+    background-color: #F2F1F1;
+    width: 216px;
+    height: 430px;
+    margin: 0 10px;
 	img {
 		position: absolute;
 		top: 10px;
 		left: 10px;
 		right: 10px;
-		width: 87%;
+		width: 90%;
 	}
 }
 .team-text {
 	position: absolute;
-	top: 146px;
+	top: 230px;
     left: 10px;
     h5 {
-    	font-size: 12px;
-    	margin-bottom: 0;
+    	margin-bottom: 0;    
     }
     h6 {
 		margin-top: 0;
-		font-size: 9px;
     }
-	p {
-		font-size: 7px;
-	}
 	span {
 		color: #DA6024;
 		text-decoration: underline;
 	}
 	a {
-		color: black;
+		color: #392F2C;
 	}
 }
 .team-row-two {
@@ -56,12 +51,12 @@
 	background-color: #7D98AA;
 	width: 100%;
 	img {
-		width: 611px;
+		width: 923px;
     	height: auto;
 	}
 }
 .team-lg-text {
-	width: 611px;
+	width: 923px;
    	height: auto;
    	padding-left: 15px;
    	padding-right: 20px;
@@ -69,15 +64,10 @@
    		margin-top: 14px;
    		margin-bottom: 4px;
    	}
-   	h5 {
-   		font-size: 14px;
-   	}
    	h6 {
-   		font-size: 12px;
    		margin-top: 0;
    	}
    	p {
-   		font-size: 10px;
    		span {
 			color: #DA6024;
 			text-decoration: underline;
@@ -87,6 +77,6 @@
 		color: #DA6024;
 	}
 	a {
-		color: black;
+		color: #392F2C;
 	}
 }
