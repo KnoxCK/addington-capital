@@ -23,7 +23,7 @@
     <% end %>
 	</div>
 	<div class="latest-news">
-  <% @press_releases.each do |press_release| %>
+  <% @press_releases.first(5).each do |press_release| %>
 		<%= render 'pages/press_cuttings', press_release: press_release %>
   <% end %>
 	</div>

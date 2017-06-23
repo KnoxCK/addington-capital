@@ -3,6 +3,7 @@ $(document).ready(function(){
   if (hash && hash === '#news-archive') {
     $('.latest-news').addClass('hidden');
     $('.news-archive').removeClass('hidden');
+    $('.archive').addClass('active');
   }
 
   if (hash) {
