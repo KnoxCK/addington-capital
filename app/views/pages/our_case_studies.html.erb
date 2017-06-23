@@ -15,7 +15,7 @@
 </div>
 
 <div class="case-studies-tabs">
-	<h5><%= link_to "RETAIL", "", class: 'retail-tab' %></h5>
+	<h5><%= link_to "RETAIL", "", class: 'retail-tab active' %></h5>
 	<h5><%= link_to "RESIDENTIAL", "", class: 'residential-tab' %></h5>
 	<h5><%= link_to "OFFICES", "", class: 'offices-tab' %></h5>
 </div>
@@ -101,7 +101,7 @@
 
 <div class="case-study-detailed">
 
-  <div class="case-study-wrapper hidden" id="retail">
+  <div class="retail-wrapper case-study-wrapper" id="retail">
   	<%= link_to "#" do %>
   		<%= image_tag "Addington_Capital_arrow_left.png", class: "arrow prop-arrow prop-arrow-left" %>
   	<% end %>
@@ -131,7 +131,7 @@
     <% end %>
   </div>
 
-  <div class="case-study-wrapper hidden" id="residential">
+  <div class="residential-wrapper case-study-wrapper hidden" id="residential">
     <%= link_to "#" do %>
       <%= image_tag "Addington_Capital_arrow_left.png", class: "arrow prop-arrow prop-arrow-left" %>
     <% end %>
@@ -161,7 +161,7 @@
     <% end %>
   </div>
 
-  <div class="case-study-wrapper hidden" id="offices">
+  <div class="offices-wrapper case-study-wrapper hidden" id="offices">
     <%= link_to "#" do %>
       <%= image_tag "Addington_Capital_arrow_left.png", class: "arrow prop-arrow prop-arrow-left" %>
     <% end %>

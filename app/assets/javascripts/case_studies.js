@@ -34,7 +34,9 @@ $('.retail-tab').click(function(e){
   e.preventDefault();
   $('.case-studies-tabs a').removeClass('active');
   $(this).addClass('active');
-  $('.case-study-wrapper').addClass('hidden');
+  $('.residential-wrapper').addClass('hidden');
+  $('.offices-wrapper').addClass('hidden');
+  $('.retail-wrapper').removeClass('hidden');
   $('.residential-case-studies').addClass('hidden');
   $('.offices-case-studies').addClass('hidden');
   $('.retail-case-studies').removeClass('hidden');
@@ -44,7 +46,9 @@ $('.residential-tab').click(function(e){
   e.preventDefault();
   $('.case-studies-tabs a').removeClass('active');
   $(this).addClass('active');
-  $('.case-study-wrapper').addClass('hidden');
+  $('.retail-wrapper').addClass('hidden');
+  $('.offices-wrapper').addClass('hidden');
+  $('.residential-wrapper').removeClass('hidden');
   $('.retail-case-studies').addClass('hidden');
   $('.offices-case-studies').addClass('hidden');
   $('.residential-case-studies').removeClass('hidden');
@@ -54,7 +58,9 @@ $('.offices-tab').click(function(e){
   e.preventDefault();
   $('.case-studies-tabs a').removeClass('active');
   $(this).addClass('active');
-  $('.case-study-wrapper').addClass('hidden');
+  $('.retail-wrapper').addClass('hidden');
+  $('.residential-wrapper').addClass('hidden');
+  $('.offices-wrapper').removeClass('hidden');
   $('.residential-case-studies').addClass('hidden');
   $('.retail-case-studies').addClass('hidden');
   $('.offices-case-studies').removeClass('hidden');
