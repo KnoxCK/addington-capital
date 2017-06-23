@@ -25,8 +25,10 @@ $(document).ready(function(){
 
   $('.news-read-more').click(function(e) {
     e.preventDefault();
-    $(this).parent().addClass('hidden');
+    console.log($(this).data('target'));
     $($(this).data('target')).removeClass('hidden');
+    $(this).parent().parent().addClass('hidden');
+
   });
 
   $('.news-close').click(function(e) {
