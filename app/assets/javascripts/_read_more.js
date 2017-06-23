@@ -12,7 +12,13 @@ $(document).on('click', '#news-close', function(e) {
 $(document).ready(function(){
   $('.archive').click(function(e) {
     e.preventDefault();
+    $(this).addClass('active');
     $('.latest-news').addClass('hidden');
-    $('.archive').removeClass('hidden');
+    $('.news-archive').removeClass('hidden');
+  });
+
+  $('.year').click(function(e) {
+    e.preventDefault();
+    $($(this).data('target')).toggleClass('hidden');
   });
 });
