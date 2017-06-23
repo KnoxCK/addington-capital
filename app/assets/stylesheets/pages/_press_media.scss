@@ -92,4 +92,8 @@
   width: 500px;
   border-bottom: 1px solid #B2A7A2;
   padding: 10px 0;
+  &:hover {
+    text-decoration: underline;
+    cursor: pointer;
+  }
 }
