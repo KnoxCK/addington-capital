@@ -19,7 +19,7 @@ class PagesController < ApplicationController
   end
 
   def press_media
-    @press_releases = PressRelease.all
+    @press_releases = PressRelease.order(:date)
   end
 
   def contact_us
