@@ -18,6 +18,14 @@ $(document).ready(function(){
       'slow');
   }
 
+  $('.what-we-do-links h5').click(function(e) {
+    e.preventDefault();
+    $('.about').removeClass('active');
+    $('.what-we-do-links h5').removeClass('active');
+    $($(this).data('target')).addClass('active');
+    $(this).addClass('active');
+  });
+
   $('.about-arrow-right').click(function(e){
     e.preventDefault();
     var active = $('.about.active')

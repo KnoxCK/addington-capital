@@ -59,15 +59,15 @@
 
     <span>
   		<div class="what-we-do-links">
-    		<%= link_to our_case_studies_path(:anchor => 'home-retail') do %>
-          <h5 class="active">RETAIL</h5>
-        <% end %>
-        <%= link_to our_case_studies_path(:anchor => 'home-residential') do %>
-          <h5>RESIDENTIAL</h5>
-        <% end %>
-        <%= link_to our_case_studies_path(:anchor => 'home-offices') do %>
-          <h5>OFFICES</h5>
-        <% end %>
+
+          <h5 class="active" data-target=".about-retail">RETAIL</h5>
+
+
+          <h5 data-target=".about-residential">RESIDENTIAL</h5>
+
+
+          <h5 data-target=".about-offices">OFFICES</h5>
+
   		</div>
     </span>
 
