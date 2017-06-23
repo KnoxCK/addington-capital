@@ -23,15 +23,15 @@ $(document).ready(function(){
     $($(this).data('target')).toggleClass('hidden');
   });
 
-  $('#news-read-more').click(function(e) {
+  $('.news-read-more').click(function(e) {
     e.preventDefault();
-    $(this).parent().parent().addClass('hidden');
+    $(this).parent().addClass('hidden');
     $($(this).data('target')).removeClass('hidden');
-  })
+  });
 
-  $('#news-close').click(function(e) {
+  $('.news-close').click(function(e) {
     e.preventDefault();
     $(this).parent().parent().addClass('hidden');
     $($(this).data('target')).removeClass('hidden');
-  })
+  });
 });
