@@ -15,8 +15,12 @@
 </div>
 <div class="pressmedia">
 	<div class="press-tabs">
-		<h5><span><%= link_to "LATEST NEWS", press_media_path %></span></h5>
-		<h5><%= link_to "NEWS ARCHIVE", "", class: 'archive' %></h5>
+		<%= link_to "", class: 'latest' do %>
+    <h5>LATEST NEWS</h5>
+    <% end %>
+		<%= link_to "", class: 'archive' do %>
+    <h5>NEWS ARCHIVE</h5>
+    <% end %>
 	</div>
 	<div class="latest-news">
   <% @press_releases.each do |press_release| %>
@@ -48,7 +52,7 @@
         <% end %>
       <% end %>
     </div>
-
+    <% if Date.today.year >= 2018 %>
     <div class="year 2018" data-target=".2018-news">2018</div>
     <div class="2018-news hidden">
       <% @press_releases.each do |press_release| %>
@@ -57,5 +61,6 @@
         <% end %>
       <% end %>
     </div>
+    <% end %>
   </div>
 </div>
