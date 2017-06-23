@@ -1,11 +1,11 @@
 <hr>
 <div class="latest-news-post">
 	<div class="news-date">
-		<h5>Posted in News on <%= press_release.formatted_date if press_release %></h5>
+		<p>Posted in News on <%= press_release.formatted_date if press_release %></p>
 	</div>
 	<div class="news-snippet">
 		<div class="news-title">
-			<h5><%= press_release.title if press_release %></h5>
+			<p><span><%= press_release.title if press_release %></span></p>
 			<div class="news-brief" id="news-brief-<%= press_release.id %>">
 				<p><%= press_release.first_paragraph if press_release %></p>
 				<h6><%= link_to "[ READ MORE... ]", "#", class: 'news-read-more','data-target' => "#news-#{press_release.id}" %></h6>
