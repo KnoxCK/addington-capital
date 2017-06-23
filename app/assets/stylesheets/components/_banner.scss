@@ -15,10 +15,14 @@
 }
 .banner-content {
   height: 300px;
-  width: 519px;
-  h1, h6 {
+  width: 800px;
+  h1 {
     color: #DA6024;
-
+    font-size: 40px;
+    font-weight: lighter;
+  }
+  h6 { 
+    color: #DA6024;
   }
   a {
     color: #DA6024;

@@ -1,13 +1,13 @@
 @font-face {
     font-family: 'Bliss2B';
     src: font-url(asset-path("Bliss2B.otf")) format('opentype');
-    font-weight: normal;
+    font-weight: lighter;
     font-style: normal;
 }
 
 @font-face {
-    font-family: 'AvenirNextCondensed';
-    src: font-url(asset-path("AvenirNextCondensed.ttc")) format('truetype');
-    font-weight: normal;
+    font-family: 'AvenirNextLTProCondensed';
+    src: font-url(asset-path("AvenirNextCondensedLight.ttc")) format('truetype');
+    font-weight: lighter;
     font-style: normal;
 }
