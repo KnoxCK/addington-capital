@@ -27,7 +27,6 @@
 		text-decoration: underline;
 	}
 }
-
 .home-press-tabs {
   display: flex;
   padding: 11px 20vw 0 25vw;
@@ -48,7 +47,6 @@
     text-decoration: underline;
   }
 }
-
 .dotted-line {
 	border-bottom: #392F2C dotted 2px;
 	margin: 0 20vw 10px 25vw;
@@ -74,13 +72,15 @@
 		color: white;
 	}
 	.news-date {
-		h5 {
+		p {
 			color: white;
+			font-size: 20px;
 		}
 	}
 	.news-title {
 		h6 {
 			color: white;
+			font-size: 14px;
 		}
 	}
 }
@@ -88,13 +88,20 @@
 	width: 1300px;
 }
 .news-title {
-	h5 {
+	h6 {
+		margin-top: 10px;
+		font-size: 14px;
+	}
+	span {
 		color: #DA6024;
+		font-size: 20px;
 	}
 }
-.news-date h5 {
+.news-date p {
     width: 160px;
     margin-right: 60px;
+    color: #392F2C;
+	font-size: 20px;
 }
 .full-news {
 	width: 500px;
@@ -106,6 +113,7 @@
 .news-archive {
   display: flex;
   flex-direction: column;
+      padding-left: 50vw;
 }
 .year {
   width: 500px;
