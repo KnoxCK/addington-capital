@@ -2,17 +2,20 @@
 	position: relative;
 	padding-bottom: 30px;
 	height: 100%;
-	h2 {
-		padding: 20px 20vw 0 25vw;
-		margin-bottom: 0;
-	}
+}
+.press-title {
+	padding: 20px 20vw 0 25vw;
+	margin-bottom: 0;
+	font-size: 55px;
+	margin-top: 35px;
 }
 .press-tabs {
 	display: flex;
 	padding: 11px 20vw 0 25vw;
-	h5 {
+	p {
 		padding-right: 35px;
-
+		font-size: 25px;
+		padding-top: 20px;
 	}
 	a {
 		text-decoration: none;
@@ -27,9 +30,14 @@
 		text-decoration: underline;
 	}
 }
+hr {
+	margin-top: 22px;
+	margin-bottom: 22px;
+	color: #392F2C;
+}
 .home-press-tabs {
   display: flex;
-  padding: 11px 20vw 0 25vw;
+  padding: 18px 20vw 0 25vw;
   h5 {
     padding-right: 35px;
 
@@ -64,6 +72,8 @@
 	p {
 		color: #C1B1AA;
 		font-stretch: ultra-condensed;
+		line-height: 18px;
+		margin-top: 10px;
 	}
 }
 .latest-news-post:hover {
@@ -80,7 +90,8 @@
 	.news-title {
 		h6 {
 			color: white;
-			font-size: 14px;
+			font-size: 13px;
+			margin-top: 20px;
 		}
 	}
 }
@@ -90,7 +101,8 @@
 .news-title {
 	h6 {
 		margin-top: 10px;
-		font-size: 14px;
+		font-size: 13px;
+		margin-top: 20px;
 	}
 	span {
 		color: #DA6024;
@@ -106,6 +118,10 @@
 .full-news {
 	width: 500px;
 	color: white;
+	img {
+		width: 480px;
+    	height: 300px;
+	}
 	h6 {
 		color: #DA6024;
 	}
@@ -113,12 +129,13 @@
 .news-archive {
   display: flex;
   flex-direction: column;
-      padding-left: 50vw;
 }
 .year {
   width: 500px;
-  border-bottom: 1px solid #B2A7A2;
   padding: 10px 0;
+  justify-content: center;
+  display: flex;
+  font-size: 20px;
   &:hover {
     text-decoration: underline;
     cursor: pointer;

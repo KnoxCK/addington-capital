@@ -25,28 +25,28 @@
 </div>
 <div class="blue-value-wrapper">
 	<h1>£<%= @transaction.value %>M</h1>
-	<h4>VALUE OF<br>TRANSACTIONS<br>TO DATE</h4>
+	<h4>VALUE OF<br>TRANSACTIONS<br>TO DATE</h4>	
 </div>
 <div class="press-wrapper" id="press">
-<div class="pressmedia">
-	<h2>PRESS & MEDIA</h2>
-	<div class="home-press-tabs">
-		<h5><span><%= link_to "LATEST NEWS", "" %></span></h5>
-		<h5><%= link_to "NEWS ARCHIVE", press_media_path(:anchor => 'news-archive') %></h5>
+	<div class="pressmedia">
+		<p class="press-title">PRESS & MEDIA</p>
+		<div class="home-press-tabs">
+			<h5><%= link_to "LATEST NEWS", "" %></h5>
+			<h5><%= link_to "NEWS ARCHIVE", press_media_path(:anchor => 'news-archive') %></h5>
+		</div>
+		<div class="latest-news">
+			<div class="dotted-line"></div>
+	    <% @latest_press_releases.each do |press_release| %>
+			  <%= render 'pages/press_cuttings', press_release: press_release %>
+	    <% end %>
+		</div>
+		<div id="whatwedo"></div>
+		<div class="hand-icon-press text-center">
+			<%= link_to "" do %>
+				<%= image_tag "Addington_Capital_down_black.png", class: "hand-icn-press", id: "press-page-down" %>
+			<% end %>
+		</div>
 	</div>
-	<div class="latest-news">
-		<div class="dotted-line"></div>
-    <% @latest_press_releases.each do |press_release| %>
-		  <%= render 'pages/press_cuttings', press_release: press_release %>
-    <% end %>
-	</div>
-	<div id="whatwedo"></div>
-	<div class="hand-icon-press text-center">
-		<%= link_to "" do %>
-			<%= image_tag "Addington_Capital_down_black.png", class: "hand-icn-press", id: "press-page-down" %>
-		<% end %>
-	</div>
-</div>
 </div>
 <div class="what-we-do-margin hidden"></div>
 <div class="what-we-do-wrapper" id="what-we-do">
@@ -75,7 +75,7 @@
 			<h3>RETAIL</h3>
 			<h5> Acquired and actively managing a retail portfolio from small shops to shopping centres,  redeveloping according to market demand.</h5>
       		<%= link_to our_case_studies_path(:anchor => 'home-retail') do %>
-    		<h6>[ VIEW RETAIL CASE STUDIES... ]</h6>
+    		<h6>[ VIEW ALL CASE STUDIES... ]</h6>
     	<% end %>
 		</div>
 
@@ -83,7 +83,7 @@
 			<h3>RESIDENTIAL</h3>
 			<h5>We have been acquiring and actively managing standing residential assets since 2012 with experience in both PRS and BTR. We create quality homes for students, professional and families. ​</h5>
       <%= link_to our_case_studies_path(:anchor => 'home-residential') do %>
-    <h6>[ VIEW RESIDENTIAL CASE STUDIES... ]</h6>
+    <h6>[ VIEW ALL CASE STUDIES... ]</h6>
     <% end %>
 		</div>
 
@@ -91,7 +91,7 @@
       <h3>OFFICES</h3>
       <h5>Acquired and actively managing a retail portfolio from small shops to shopping centres,  redeveloping according to market demand.</h5>
       <%= link_to our_case_studies_path(:anchor => 'home-offices') do %>
-    <h6>[ VIEW OFFICE CASE STUDIES... ]</h6>
+    <h6>[ VIEW ALL CASE STUDIES... ]</h6>
     <% end %>
     </div>
 
