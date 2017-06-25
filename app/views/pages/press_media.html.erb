@@ -27,13 +27,14 @@
 		<%= render 'pages/press_cuttings', press_release: press_release %>
   <% end %>
 	</div>
+
   <div class="news-archive hidden">
     <% if Date.today.year >= 2018 %>
       <div class="year 2018" data-target=".2018-news">2018</div>
       <div class="2018-news hidden">
         <% @press_releases.each do |press_release| %>
           <% if press_release.date.year == 2018 %>
-            <%= render 'pages/press_cuttings', press_release: press_release %>
+            <%= render 'pages/archive_press_cuttings', press_release: press_release %>
           <% end %>
         <% end %>
       </div>
@@ -42,7 +43,7 @@
     <div class="2017-news hidden">
       <% @press_releases.each do |press_release| %>
         <% if press_release.date.year == 2017 %>
-          <%= render 'pages/press_cuttings', press_release: press_release %>
+          <%= render 'pages/archive_press_cuttings', press_release: press_release %>
         <% end %>
       <% end %>
     </div>
@@ -50,7 +51,7 @@
     <div class="2016-news hidden">
       <% @press_releases.each do |press_release| %>
         <% if press_release.date.year == 2016 %>
-          <%= render 'pages/press_cuttings', press_release: press_release %>
+          <%= render 'pages/archive_press_cuttings', press_release: press_release %>
         <% end %>
       <% end %>
     </div>
@@ -58,7 +59,7 @@
     <div class="2015-news hidden">
       <% @press_releases.each do |press_release| %>
         <% if press_release.date.year == 2015 %>
-          <%= render 'pages/press_cuttings', press_release: press_release %>
+          <%= render 'pages/archive_press_cuttings', press_release: press_release %>
         <% end %>
       <% end %>
     </div>

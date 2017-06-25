@@ -36,4 +36,17 @@ $(document).ready(function(){
     $(this).parent().parent().addClass('hidden');
     $($(this).data('target')).removeClass('hidden');
   });
+
+  $('.archive-read-more').click(function(e) {
+    e.preventDefault();
+    console.log($(this).data('target'));
+    $($(this).data('target')).removeClass('hidden');
+    $(this).parent().parent().addClass('hidden');
+  });
+
+  $('.archive-close').click(function(e) {
+    e.preventDefault();
+    $(this).parent().parent().addClass('hidden');
+    $($(this).data('target')).removeClass('hidden');
+  });
 });
