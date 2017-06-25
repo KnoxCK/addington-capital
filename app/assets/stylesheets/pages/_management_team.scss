@@ -22,19 +22,32 @@
 	position: absolute;
 	top: 275px;
     left: 10px;
-    h5 {
-    	margin-bottom: 0;
-    }
-    h6 {
-		margin-top: 0;
-    }
+    
 	span {
-		color: #DA6024;
-		text-decoration: underline;
+		font-size: 14px;
 	}
 	a {
 		color: #392F2C;
 	}
+	p {
+		span {
+			color: #DA6024;
+			text-decoration: underline;
+			
+		}
+	}
+}
+#empty-div {
+	height: 20px;
+}
+.team-name {
+	font-size: 25px;
+	margin-top: 12px;
+	margin-bottom: 0;
+}
+.team-title {
+	font-size: 16px;
+	margin-bottom: 30px;
 }
 .team-row-two {
 	margin-bottom: 40px;
@@ -74,10 +87,25 @@
 			text-decoration: underline;
 		}
    	}
-   	span {
-		color: #DA6024;
-	}
 	a {
 		color: #392F2C;
 	}
+}
+.team-name-lg {
+	color: #DA6024;
+	font-size: 40px;
+	margin-top: 20px;
+}
+.team-title-lg {
+	font-size: 22px;
+	margin-bottom: 40px;
+}
+.team-intro-lg {
+	font-size: 25px;
+	margin-bottom: 20px;
+}
+.team-para-lg {
+	font-size: 20px;
+	margin-bottom: 40px;
+	line-height: 22px;
 }

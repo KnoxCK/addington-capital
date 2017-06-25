@@ -35,7 +35,7 @@
   			<%= link_to "" do %>
   				<%= cl_image_tag(case_study.photo, width: 150, height: 100, crop: :fill) %>
   				<div class="case-studies-text">
-  					<h5><%= case_study.title.upcase %></h5>
+  					<p class="case-studies-title"><%= case_study.title.upcase %></p>
   					<p><%= case_study.summary %></p>
   					<h6>[ READ MORE ]</h6>
   				</div>
@@ -60,7 +60,7 @@
         <%= link_to "" do %>
           <%= cl_image_tag(case_study.photo, width: 150, height: 100, crop: :fill) %>
           <div class="case-studies-text">
-            <h5><%= case_study.title.upcase %></h5>
+            <p class="case-studies-title"><%= case_study.title.upcase %></p>
             <p><%= case_study.summary %></p>
             <h6>[ READ MORE ]</h6>
           </div>
@@ -85,7 +85,7 @@
         <%= link_to "" do %>
           <%= cl_image_tag(case_study.photo, width: 150, height: 100, crop: :fill) %>
           <div class="case-studies-text">
-            <h5><%= case_study.title.upcase %></h5>
+            <p class="case-studies-title"><%= case_study.title.upcase %></p>
             <p><%= case_study.summary %></p>
             <h6>[ READ MORE ]</h6>
           </div>
@@ -114,11 +114,11 @@
     <% else %>
       <div class="case-study-lg" id="<%= case_study.id %>">
     <% end %>
-  		<h5><%= case_study.title.upcase %></h5>
+  		<p class="case-study-lg-title"><%= case_study.title.upcase %></p>
   		<div class="case-study-lg-box">
   			<%= cl_image_tag(case_study.photo, height: 250, width: 250, crop: :fill) %>
   			<div class="case-study-lg-right">
-  				<h6><%= case_study.summary %></h6>
+  				<span><%= case_study.summary %></span>
   				<p><%= case_study.description %></p>
   			</div>
   		</div>
@@ -144,11 +144,11 @@
     <% else %>
       <div class="case-study-lg" id="<%= case_study.id %>">
     <% end %>
-      <h5><%= case_study.title.upcase %></h5>
+      <p class="case-study-lg-title"><%= case_study.title.upcase %></p>
       <div class="case-study-lg-box">
         <%= cl_image_tag(case_study.photo, height: 250, width: 250, crop: :fill) %>
         <div class="case-study-lg-right">
-          <h6><%= case_study.summary %></h6>
+          <span><%= case_study.summary %></span>
           <p><%= case_study.description %></p>
         </div>
       </div>
@@ -174,11 +174,11 @@
     <% else %>
       <div class="case-study-lg" id="<%= case_study.id %>">
     <% end %>
-      <h5><%= case_study.title.upcase %></h5>
+      <p class="case-study-lg-title"><%= case_study.title.upcase %></p>
       <div class="case-study-lg-box">
         <%= cl_image_tag(case_study.photo, height: 250, width: 250, crop: :fill) %>
         <div class="case-study-lg-right">
-          <h6><%= case_study.summary %></h6>
+          <span><%= case_study.summary %></span>
           <p><%= case_study.description %></p>
         </div>
       </div>
