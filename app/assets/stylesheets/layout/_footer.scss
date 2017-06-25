@@ -1,6 +1,6 @@
 // Your footer style
 .spacer {
-	height: 25px;
+	height: 30px;
 	position: relative;
 }
 .footer {
@@ -23,7 +23,9 @@
   }
 }
 .footer-page-links {
-
+	p {
+		line-height: 18px;
+	}
 }
 .footer-brochure-img {
 	img {
@@ -42,6 +44,7 @@
 	padding: 0 10px;
 	p {
 		margin-bottom: 0;
+		line-height: 18px;
 	}
 }
 .vertical-line {

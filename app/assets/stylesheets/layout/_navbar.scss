@@ -22,10 +22,10 @@
 }
 /* Navbar logo */
 .navbar-addcap-brand img {
-    width: 240px;
+    width: 280px;
     position: absolute;
     left: 15px;
-    top: 13px;
+    top: 6px;
 }
 /* Navbar right section (with form, links, button) */
 .navbar-addcap-right {
@@ -39,11 +39,11 @@
   color: white;
   font-size: 14px;
   font-weight: normal;
-  letter-spacing: 0px;
+  letter-spacing: 0.5px;
   line-height: 0.5px;
   padding: 10px 15px;
-  margin-right: 5px;
-  margin-left: 5px;
+  margin-right: 8px;
+  margin-left: 8px;
   &.active {
     text-decoration: none;
     background-color: #DA6024;
@@ -54,8 +54,8 @@
   text-decoration: none;
   background-color: #DA6024;
   padding: 10px 15px;
-  margin-right: 5px;
-  margin-left: 5px;
+  margin-right: 8px;
+  margin-left: 8px;
 }
 // On scroll only
 .navbar-addcap-scroll {

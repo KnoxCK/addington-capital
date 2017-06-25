@@ -16,11 +16,16 @@
 .banner-content {
   height: 300px;
   width: 800px;
-  h1, h6 {
+  h1 {
+    font-size: 76px;
     color: #DA6024;
+  }
+  h3 {
+    font-size: 40px;
   }
   h4 {
     text-align: justify;
+    font-size: 35px;
   }
   a {
     color: #DA6024;
@@ -36,6 +41,7 @@
   h6, a {
     text-decoration: none;
     color: white;
+    font-size: 20px;
   }
 }
 .pages-banner {
@@ -56,6 +62,11 @@
 }
 .pages-banner-content {
   height: 100px;
+  margin-top: 25px;
+  h2 {
+    margin-bottom: 0;
+    margin-top: 30px;
+  }
 }
 .contact-banner {
   margin-bottom: 7px;
