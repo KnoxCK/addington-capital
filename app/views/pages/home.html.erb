@@ -5,14 +5,14 @@
 		<h3>Mission Statement </h3>
 		<h4>"To be the operating partner of choice for value investors active in the UK real estate markets in which we specialise"</h4>
 	    <!-- <h5>23rd Jan 2017</h5>
-	    <h6><%= link_to "[ READ MORE ]...", press_media_path %></h6>
-		<%= link_to "" do %> -->
+	    <h6><%= link_to "[ READ MORE ]...", press_media_path %></h6> -->
+		<%= link_to "https://www.twitter.com", target: "_blank" do %> 
 			<%= image_tag "Addington_Capital_Twitter_logo.png", class: "social-media-icon" %>
 		<% end %>
-		<%= link_to "" do %>
+		<%= link_to "https://www.linkedin.com", target: "_blank" do %>
 			<%= image_tag "Addington_Capital_LinkedIn_logo.png", class: "social-media-icon" %>
 		<% end %>
-		<%= link_to "" do %>
+		<%= link_to "https://www.facebook.com", target: "_blank" do %>
 			<%= image_tag "Addington_Capital_Facebook_logo.png", class: "social-media-icon" %>
 		<% end %>
 	</div>
@@ -109,7 +109,7 @@
 </div>
 <div class="blue-contact-wrapper">
 	<div class="contact-text text-center">
-		<h2>CONTACT US</h2>
+		<p class="contact-title">CONTACT US</p>
 		<%= render 'pages/contact_details' %>
 	</div>
 </div>
