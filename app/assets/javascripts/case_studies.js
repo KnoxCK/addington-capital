@@ -2,7 +2,7 @@
 $(".case-studies-box").click(function(e) {
   e.preventDefault();
   $(".case-study-lg").removeClass("active");
-  $($(this).data('category')).removeClass('hidden');
+  // $($(this).data('category')).removeClass('hidden');
   $($(this).data('target')).addClass("active");
   $('html,body').animate({
       scrollTop: $(".case-study-detailed").offset().top - 100},
@@ -13,7 +13,7 @@ $(".case-studies-box").click(function(e) {
 $('.prop-arrow-right').click(function(e){
   e.preventDefault();
   var active = $('.case-study-lg.active')
-  if (active.next().is("div")) {
+  if (active.next().hasClass("case-study-lg")) {
     active.removeClass('active');
     active.next().addClass('active');
   }
@@ -23,7 +23,7 @@ $('.prop-arrow-right').click(function(e){
 $('.prop-arrow-left').click(function(e){
   e.preventDefault();
   var active = $('.case-study-lg.active')
-  if (active.prev().is("div")) {
+  if (active.prev().hasClass("case-study-lg")) {
     active.removeClass('active');
     active.prev().addClass('active');
   }
