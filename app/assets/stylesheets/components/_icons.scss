@@ -40,6 +40,13 @@
 .about-arrow {
 	margin-top: 325px;
 }
-.prop-arrow {
-	margin-top: 128px;
+.prop-arrow-right {
+	position: relative;
+  top: 180px;
+  left: 15px;
+}
+.prop-arrow-left {
+  position: relative;
+  top: 180px;
+  right: 15px;
 }
