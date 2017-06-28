@@ -1,6 +1,12 @@
 .about {
-  display: none;
+  position: absolute;
+  opacity: 0;
+  -webkit-transition: opacity 500ms ease;
   &.active {
-    display: block;
+    opacity: 1;
   }
+}
+
+.what-we-do-content {
+  position: relative;
 }
