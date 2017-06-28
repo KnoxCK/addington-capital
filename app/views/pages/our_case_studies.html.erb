@@ -105,7 +105,7 @@
   	<%= link_to "#" do %>
   		<%= image_tag "Addington_Capital_arrow_left.png", class: "arrow prop-arrow prop-arrow-left" %>
   	<% end %>
-
+    <div class="case-studies-lg">
     <!-- Retail Case Studies -->
     <% retail_count = 0 %>
     <% @retail_case_studies.each do |case_study| %>
@@ -125,7 +125,7 @@
   	</div>
     <% retail_count += 1 %>
     <% end %>
-
+</div>
     <%= link_to "#" do %>
       <%= image_tag "Addington_Capital_arrow_right.png", class: "arrow prop-arrow prop-arrow-right" %>
     <% end %>
@@ -135,27 +135,27 @@
     <%= link_to "#" do %>
       <%= image_tag "Addington_Capital_arrow_left.png", class: "arrow prop-arrow prop-arrow-left" %>
     <% end %>
-
-    <!-- Residential Case Studies -->
-    <% residential_count = 0 %>
-    <% @residential_case_studies.each do |case_study| %>
-    <% if residential_count == 0 %>
-      <div class="case-study-lg active" id="<%= case_study.id %>">
-    <% else %>
-      <div class="case-study-lg" id="<%= case_study.id %>">
-    <% end %>
-      <p class="case-study-lg-title"><%= case_study.title.upcase %></p>
-      <div class="case-study-lg-box">
-        <%= cl_image_tag(case_study.photo, height: 250, width: 250, crop: :fill) %>
-        <div class="case-study-lg-right">
-          <span><%= case_study.summary %></span>
-          <p><%= case_study.description %></p>
+    <div class="case-studies-lg">
+      <!-- Residential Case Studies -->
+      <% residential_count = 0 %>
+      <% @residential_case_studies.each do |case_study| %>
+      <% if residential_count == 0 %>
+        <div class="case-study-lg active" id="<%= case_study.id %>">
+      <% else %>
+        <div class="case-study-lg" id="<%= case_study.id %>">
+      <% end %>
+        <p class="case-study-lg-title"><%= case_study.title.upcase %></p>
+        <div class="case-study-lg-box">
+          <%= cl_image_tag(case_study.photo, height: 250, width: 250, crop: :fill) %>
+          <div class="case-study-lg-right">
+            <span><%= case_study.summary %></span>
+            <p><%= case_study.description %></p>
+          </div>
         </div>
       </div>
+      <% residential_count += 1 %>
+      <% end %>
     </div>
-    <% residential_count += 1 %>
-    <% end %>
-
     <%= link_to "#" do %>
       <%= image_tag "Addington_Capital_arrow_right.png", class: "arrow prop-arrow prop-arrow-right" %>
     <% end %>
@@ -165,7 +165,7 @@
     <%= link_to "#" do %>
       <%= image_tag "Addington_Capital_arrow_left.png", class: "arrow prop-arrow prop-arrow-left" %>
     <% end %>
-
+<div class="case-studies-lg">
     <!-- Offices Case Studies -->
     <% offices_count = 0 %>
     <% @offices_case_studies.each do |case_study| %>
@@ -185,12 +185,12 @@
     </div>
     <% offices_count += 1 %>
     <% end %>
-
+ </div>
   	<%= link_to "#" do %>
   		<%= image_tag "Addington_Capital_arrow_right.png", class: "arrow prop-arrow prop-arrow-right" %>
   	<% end %>
-  </div>
 
 
+</div>
 </div>
 
