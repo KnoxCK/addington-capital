@@ -2,6 +2,10 @@
   position: absolute;
   opacity: 0;
   -webkit-transition: opacity 500ms ease;
+  -moz-transition: opacity 500ms ease;
+  -ms-transition: opacity 500ms ease;
+  -o-transition: opacity 500ms ease;
+  transition: opacity 500ms ease;
   &.active {
     opacity: 1;
   }
@@ -9,4 +13,5 @@
 
 .what-we-do-content {
   position: relative;
+  height: 260px;
 }
