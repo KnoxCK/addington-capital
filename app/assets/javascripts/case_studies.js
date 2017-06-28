@@ -36,6 +36,8 @@ $('.retail-tab').click(function(e){
   $(this).addClass('active');
   $('.residential-wrapper').addClass('hidden');
   $('.offices-wrapper').addClass('hidden');
+  $('.case-study-lg').removeClass('active');
+  $('.retail-wrapper .case-study-lg').first().addClass('active');
   $('.retail-wrapper').removeClass('hidden');
   $('.residential-case-studies').addClass('hidden');
   $('.offices-case-studies').addClass('hidden');
@@ -48,6 +50,8 @@ $('.residential-tab').click(function(e){
   $(this).addClass('active');
   $('.retail-wrapper').addClass('hidden');
   $('.offices-wrapper').addClass('hidden');
+  $('.case-study-lg').removeClass('active');
+  $('.residential-wrapper .case-study-lg').first().addClass('active');
   $('.residential-wrapper').removeClass('hidden');
   $('.retail-case-studies').addClass('hidden');
   $('.offices-case-studies').addClass('hidden');
@@ -60,6 +64,8 @@ $('.offices-tab').click(function(e){
   $(this).addClass('active');
   $('.retail-wrapper').addClass('hidden');
   $('.residential-wrapper').addClass('hidden');
+  $('.case-study-lg').removeClass('active');
+  $('.offices-wrapper .case-study-lg').first().addClass('active');
   $('.offices-wrapper').removeClass('hidden');
   $('.residential-case-studies').addClass('hidden');
   $('.retail-case-studies').addClass('hidden');
