@@ -113,6 +113,7 @@
   transition: opacity 500ms ease;
     &.active {
        opacity: 1;
+       display: block;
     }
 }
 .case-study-lg-box {
