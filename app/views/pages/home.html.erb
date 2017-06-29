@@ -6,7 +6,7 @@
 		<h4>"To be the operating partner of choice for value investors active in the UK real estate markets in which we specialise"</h4>
 	    <!-- <h5>23rd Jan 2017</h5>
 	    <h6><%= link_to "[ READ MORE ]...", press_media_path %></h6> -->
-		<%= link_to "https://www.twitter.com", target: "_blank" do %> 
+		<%= link_to "https://www.twitter.com", target: "_blank" do %>
 			<%= image_tag "Addington_Capital_Twitter_logo.png", class: "social-media-icon" %>
 		<% end %>
 		<%= link_to "https://www.linkedin.com", target: "_blank" do %>
@@ -25,7 +25,7 @@
 </div>
 <div class="blue-value-wrapper">
 	<h1>£<%= @transaction.value %>M</h1>
-	<h4>VALUE OF<br>TRANSACTIONS<br>TO DATE</h4>	
+	<h4>VALUE OF<br>TRANSACTIONS<br>TO DATE</h4>
 </div>
 <div class="press-wrapper" id="press">
 	<div class="pressmedia">
@@ -50,8 +50,8 @@
 </div>
 <div class="what-we-do-margin hidden"></div>
 <div class="what-we-do-wrapper" id="what-we-do">
-	<%= link_to "" do %>
-		<%= image_tag "Addington_Capital_arrow_left.png", class: "arrow about-arrow about-arrow-left" %>
+	<%= link_to "", class: "about-arrow-left" do %>
+		<%= image_tag "Addington_Capital_arrow_left.png", class: "arrow" %>
 	<% end %>
 	<div class="what-we-do text-center">
 		<h1>WHAT WE DO</h1>
@@ -63,31 +63,36 @@
           <h5 data-target=".about-offices">OFFICES</h5>
   		</div>
     </span>
-		<div class="about about-retail active">
-			<h3>RETAIL</h3>
-			<h5> Acquired and actively managing a retail portfolio from small shops to shopping centres,  redeveloping according to market demand.</h5>
-      		<%= link_to our_case_studies_path(:anchor => 'home-retail') do %>
-    		<h6>[ VIEW ALL CASE STUDIES... ]</h6>
-    	<% end %>
-		</div>
-		<div class="about about-residential">
-			<h3>RESIDENTIAL</h3>
-			<h5>We have been acquiring and actively managing standing residential assets since 2012 with experience in both PRS and BTR. We create quality homes for students, professional and families. ​</h5>
-      <%= link_to our_case_studies_path(:anchor => 'home-residential') do %>
-    <h6>[ VIEW ALL CASE STUDIES... ]</h6>
-    <% end %>
-		</div>
 
-    <div class="about about-offices">
-      <h3>OFFICES</h3>
-      <h5>An active investor and manager in the office market throughout the UK , increasingly looking at development opportunities.</h5>
-      <%= link_to our_case_studies_path(:anchor => 'home-offices') do %>
-    		<h6>[ VIEW ALL CASE STUDIES... ]</h6>
-    <% end %>
+    <div class="what-we-do-content">
+  		<div class="about about-retail active">
+  			<h3>RETAIL</h3>
+  			<h5> Acquired and actively managing a retail portfolio from small shops to shopping centres,  redeveloping according to market demand.</h5>
+        		<%= link_to our_case_studies_path do %>
+      		<h6>[ VIEW ALL CASE STUDIES... ]</h6>
+      	<% end %>
+  		</div>
+
+  		<div class="about about-residential">
+  			<h3>RESIDENTIAL</h3>
+  			<h5>We have been acquiring and actively managing standing residential assets since 2012 with experience in both PRS and BTR. We create quality homes for students, professional and families. ​</h5>
+        <%= link_to our_case_studies_path do %>
+      <h6>[ VIEW ALL CASE STUDIES... ]</h6>
+      <% end %>
+  		</div>
+
+      <div class="about about-offices">
+        <h3>OFFICES</h3>
+        <h5>An active investor and manager in the office market throughout the UK , increasingly looking at development opportunities.</h5>
+        <%= link_to our_case_studies_path do %>
+      <h6>[ VIEW ALL CASE STUDIES... ]</h6>
+      <% end %>
+      </div>
+
     </div>
 	</div>
-	<%= link_to "" do %>
-		<%= image_tag "Addington_Capital_arrow_right.png", class: "arrow about-arrow about-arrow-right" %>
+	<%= link_to "", class: "about-arrow-right" do %>
+		<%= image_tag "Addington_Capital_arrow_right.png", class: "arrow" %>
 	<% end %>
 </div>
 <div class="spacer">

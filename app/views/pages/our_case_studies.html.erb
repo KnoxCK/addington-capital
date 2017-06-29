@@ -33,7 +33,7 @@
       <% end %>
   		<div class="case-studies-box" data-target="#<%= case_study.id %>" data-category="#retail">
   			<%= link_to "" do %>
-  				<%= cl_image_tag(case_study.photo, width: 150, height: 100, crop: :fill) %>
+  				<%= cl_image_tag(case_study.photo, width: 150, height: 100, crop: :fit) %>
   				<div class="case-studies-text">
   					<p class="case-studies-title"><%= case_study.title.upcase %></p>
   					<p><%= case_study.summary %></p>
@@ -58,7 +58,7 @@
       <% end %>
       <div class="case-studies-box" data-target="#<%= case_study.id %>" data-category="#residential">
         <%= link_to "" do %>
-          <%= cl_image_tag(case_study.photo, width: 150, height: 100, crop: :fill) %>
+          <%= cl_image_tag(case_study.photo, width: 150, height: 100, crop: :fit) %>
           <div class="case-studies-text">
             <p class="case-studies-title"><%= case_study.title.upcase %></p>
             <p><%= case_study.summary %></p>
@@ -83,7 +83,7 @@
       <% end %>
       <div class="case-studies-box" data-target="#<%= case_study.id %>" data-category="#offices">
         <%= link_to "" do %>
-          <%= cl_image_tag(case_study.photo, width: 150, height: 100, crop: :fill) %>
+          <%= cl_image_tag(case_study.photo, width: 150, height: 100, crop: :fit) %>
           <div class="case-studies-text">
             <p class="case-studies-title"><%= case_study.title.upcase %></p>
             <p><%= case_study.summary %></p>
@@ -102,10 +102,10 @@
 <div class="case-study-detailed">
 
   <div class="retail-wrapper case-study-wrapper" id="retail">
-  	<%= link_to "#" do %>
-  		<%= image_tag "Addington_Capital_arrow_left.png", class: "arrow prop-arrow prop-arrow-left" %>
+  	<%= link_to "#", class: "prop-arrow-left" do %>
+  		<%= image_tag "Addington_Capital_arrow_left.png", class: "arrow" %>
   	<% end %>
-
+    <div class="case-studies-lg">
     <!-- Retail Case Studies -->
     <% retail_count = 0 %>
     <% @retail_case_studies.each do |case_study| %>
@@ -114,58 +114,58 @@
     <% else %>
       <div class="case-study-lg" id="<%= case_study.id %>">
     <% end %>
-  		<p class="case-study-lg-title"><%= case_study.title.upcase %></p>
-  		<div class="case-study-lg-box">
-  			<%= cl_image_tag(case_study.photo, height: 250, width: 250, crop: :fill) %>
-  			<div class="case-study-lg-right">
-  				<span><%= case_study.summary %></span>
-  				<p><%= case_study.description %></p>
-  			</div>
-  		</div>
-  	</div>
+    		<p class="case-study-lg-title"><%= case_study.title.upcase %></p>
+    		<div class="case-study-lg-box">
+    			<%= cl_image_tag(case_study.photo, height: 250, width: 250, crop: :fit) %>
+    			<div class="case-study-lg-right">
+    				<span><%= case_study.summary %></span>
+    				<p><%= case_study.description %></p>
+    			</div>
+    		</div>
+    	</div>
     <% retail_count += 1 %>
     <% end %>
-
-    <%= link_to "#" do %>
-      <%= image_tag "Addington_Capital_arrow_right.png", class: "arrow prop-arrow prop-arrow-right" %>
+</div>
+    <%= link_to "#", class: "prop-arrow-right" do %>
+      <%= image_tag "Addington_Capital_arrow_right.png", class: "arrow" %>
     <% end %>
   </div>
 
   <div class="residential-wrapper case-study-wrapper hidden" id="residential">
-    <%= link_to "#" do %>
-      <%= image_tag "Addington_Capital_arrow_left.png", class: "arrow prop-arrow prop-arrow-left" %>
+    <%= link_to "#", class: "prop-arrow-left" do %>
+      <%= image_tag "Addington_Capital_arrow_left.png", class: "arrow" %>
     <% end %>
-
-    <!-- Residential Case Studies -->
-    <% residential_count = 0 %>
-    <% @residential_case_studies.each do |case_study| %>
-    <% if residential_count == 0 %>
-      <div class="case-study-lg active" id="<%= case_study.id %>">
-    <% else %>
-      <div class="case-study-lg" id="<%= case_study.id %>">
-    <% end %>
-      <p class="case-study-lg-title"><%= case_study.title.upcase %></p>
-      <div class="case-study-lg-box">
-        <%= cl_image_tag(case_study.photo, height: 250, width: 250, crop: :fill) %>
-        <div class="case-study-lg-right">
-          <span><%= case_study.summary %></span>
-          <p><%= case_study.description %></p>
+    <div class="case-studies-lg">
+      <!-- Residential Case Studies -->
+      <% residential_count = 0 %>
+      <% @residential_case_studies.each do |case_study| %>
+      <% if residential_count == 0 %>
+        <div class="case-study-lg active" id="<%= case_study.id %>">
+      <% else %>
+        <div class="case-study-lg" id="<%= case_study.id %>">
+      <% end %>
+          <p class="case-study-lg-title"><%= case_study.title.upcase %></p>
+          <div class="case-study-lg-box">
+            <%= cl_image_tag(case_study.photo, height: 250, width: 250, crop: :fit) %>
+            <div class="case-study-lg-right">
+              <span><%= case_study.summary %></span>
+              <p><%= case_study.description %></p>
+            </div>
+          </div>
         </div>
-      </div>
+      <% residential_count += 1 %>
+      <% end %>
     </div>
-    <% residential_count += 1 %>
-    <% end %>
-
-    <%= link_to "#" do %>
-      <%= image_tag "Addington_Capital_arrow_right.png", class: "arrow prop-arrow prop-arrow-right" %>
+    <%= link_to "#", class: "prop-arrow-right" do %>
+      <%= image_tag "Addington_Capital_arrow_right.png", class: "arrow" %>
     <% end %>
   </div>
 
   <div class="offices-wrapper case-study-wrapper hidden" id="offices">
-    <%= link_to "#" do %>
-      <%= image_tag "Addington_Capital_arrow_left.png", class: "arrow prop-arrow prop-arrow-left" %>
+    <%= link_to "#", class: "prop-arrow-left" do %>
+      <%= image_tag "Addington_Capital_arrow_left.png", class: "arrow" %>
     <% end %>
-
+    <div class="case-studies-lg">
     <!-- Offices Case Studies -->
     <% offices_count = 0 %>
     <% @offices_case_studies.each do |case_study| %>
@@ -174,23 +174,22 @@
     <% else %>
       <div class="case-study-lg" id="<%= case_study.id %>">
     <% end %>
-      <p class="case-study-lg-title"><%= case_study.title.upcase %></p>
-      <div class="case-study-lg-box">
-        <%= cl_image_tag(case_study.photo, height: 250, width: 250, crop: :fill) %>
-        <div class="case-study-lg-right">
-          <span><%= case_study.summary %></span>
-          <p><%= case_study.description %></p>
+        <p class="case-study-lg-title"><%= case_study.title.upcase %></p>
+        <div class="case-study-lg-box">
+          <%= cl_image_tag(case_study.photo, height: 250, width: 250, crop: :fit) %>
+          <div class="case-study-lg-right">
+            <span><%= case_study.summary %></span>
+            <p><%= case_study.description %></p>
+          </div>
         </div>
       </div>
-    </div>
     <% offices_count += 1 %>
     <% end %>
+    </div>
+  	<%= link_to "#", class: "prop-arrow-right" do %>
+      <%= image_tag "Addington_Capital_arrow_right.png", class: "arrow" %>
+    <% end %>
 
-  	<%= link_to "#" do %>
-  		<%= image_tag "Addington_Capital_arrow_right.png", class: "arrow prop-arrow prop-arrow-right" %>
-  	<% end %>
   </div>
-
-
 </div>
 
