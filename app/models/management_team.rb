@@ -1,0 +1,2 @@
+class ManagementTeam < ApplicationRecord
+end
