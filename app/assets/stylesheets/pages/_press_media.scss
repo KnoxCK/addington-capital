@@ -64,7 +64,7 @@ hr {
 	padding: 10px 20vw 10px 25vw;
 	margin-top: -22px;
 	margin-bottom: -22px;
-	h6, a {
+	a {
 		font-weight: bold;
 		text-decoration: none;
 		color: #392F2C;
@@ -83,6 +83,7 @@ hr {
 	}
 	a:hover {
 		text-decoration: underline;
+		color: white;
 	}
 }
 .latest-news-post:hover {
@@ -91,9 +92,9 @@ hr {
   -ms-transition: all 500ms ease;
   -o-transition: all 500ms ease;
   transition: all 500ms ease;
-	background-color: #392F2C;
+  background-color: #392F2C;
 	a {
-		color: white;
+		color: #C1B1AA;
 	}
 	.news-date {
 		p {
@@ -108,6 +109,59 @@ hr {
 			margin-top: 20px;
 		}
 	}
+	#read-more-color {
+		color: white;
+		a {
+			color: white;
+		}
+	}
+	#close-color {
+		color: white;
+		a {
+			color: white;
+		}
+	}
+}
+.archive-news-post {
+  display: flex;
+  padding: 10px 50px 10px 25px;
+  margin-top: -22px;
+  margin-bottom: -22px;
+  h6, a {
+    font-weight: bold;
+    text-decoration: none;
+    color: #392F2C;
+  }
+  p {
+    color: #C1B1AA;
+    font-stretch: ultra-condensed;
+    line-height: 18px;
+    margin-top: 10px;
+  }
+}
+.archive-news-post:hover {
+  -webkit-transition: all 500ms ease;
+  -moz-transition: all 500ms ease;
+  -ms-transition: all 500ms ease;
+  -o-transition: all 500ms ease;
+  transition: all 500ms ease;
+  background-color: #392F2C;
+  a {
+    color: white;
+  }
+  .news-date {
+    p {
+      color: white;
+      font-size: 20px;
+    }
+  }
+  .news-title {
+    h6 {
+      color: white;
+      font-size: 13px;
+      margin-top: 20px;
+    }
+  }
 }
 .news-snippet {
 	width: 80%;
@@ -145,10 +199,19 @@ hr {
 }
 .news-archive {
   display: flex;
-  flex-direction: column;
+  width: 80vw;
+  .years-tabs {
+    flex: 0 0 15vw;
+    margin-top: 20px;
+    padding-left: 40px;
+    font-size: 25px;
+  }
+  .news-by-year {
+    flex: 0 0 85vw;
+  }
 }
 .year {
-  width: 500px;
+  width: 100px;
   padding: 10px 0;
   justify-content: center;
   display: flex;
@@ -156,6 +219,9 @@ hr {
   &:hover {
     text-decoration: underline;
     cursor: pointer;
+  }
+  &.active {
+    text-decoration: underline;
   }
 }
 

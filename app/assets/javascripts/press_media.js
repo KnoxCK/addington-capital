@@ -20,7 +20,10 @@ $(document).ready(function(){
 
   $('.year').click(function(e) {
     e.preventDefault();
-    $($(this).data('target')).toggleClass('hidden');
+    $('.year').removeClass('active');
+    $(this).addClass('active');
+    $('.news').addClass('hidden');
+    $($(this).data('target')).removeClass('hidden');
   });
 
   $('.news-read-more').click(function(e) {
