@@ -62,7 +62,7 @@
           <div class="case-studies-text">
             <p class="case-studies-title"><%= case_study.title.upcase %></p>
             <p><%= case_study.summary.truncate(140) %></p>
-            <h6 class=“read-more”>[ READ MORE ]</h6>
+            <h6 class="read-more">[ READ MORE ]</h6>
           </div>
           <div class="case-study-box-overlay"></div>
         <% end %>
@@ -87,7 +87,7 @@
           <div class="case-studies-text">
             <p class="case-studies-title"><%= case_study.title.upcase %></p>
             <p><%= case_study.summary.truncate(140) %></p>
-            <h6 class=“read-more”>[ READ MORE ]</h6>
+            <h6 class="read-more">[ READ MORE ]</h6>
           </div>
           <div class="case-study-box-overlay"></div>
         <% end %>
@@ -116,7 +116,7 @@
     <% end %>
     		<p class="case-study-lg-title"><%= case_study.title.upcase %></p>
     		<div class="case-study-lg-box">
-    			<%= cl_image_tag(case_study.photo, height: 250, width: 250, crop: :fit) %>
+    			<%= cl_image_tag(case_study.photo) %>
     			<div class="case-study-lg-right">
     				<span><%= case_study.summary %></span>
     				<p><%= case_study.description %></p>
@@ -146,7 +146,7 @@
       <% end %>
           <p class="case-study-lg-title"><%= case_study.title.upcase %></p>
           <div class="case-study-lg-box">
-            <%= cl_image_tag(case_study.photo, height: 250, width: 250, crop: :fit) %>
+            <%= cl_image_tag(case_study.photo) %>
             <div class="case-study-lg-right">
               <span><%= case_study.summary %></span>
               <p><%= case_study.description %></p>
@@ -176,7 +176,7 @@
     <% end %>
         <p class="case-study-lg-title"><%= case_study.title.upcase %></p>
         <div class="case-study-lg-box">
-          <%= cl_image_tag(case_study.photo, height: 250, width: 250, crop: :fit) %>
+          <%= cl_image_tag(case_study.photo) %>
           <div class="case-study-lg-right">
             <span><%= case_study.summary %></span>
             <p><%= case_study.description %></p>
