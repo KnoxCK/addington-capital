@@ -64,7 +64,7 @@ hr {
 	padding: 10px 20vw 10px 25vw;
 	margin-top: -22px;
 	margin-bottom: -22px;
-	h6, a {
+	a {
 		font-weight: bold;
 		text-decoration: none;
 		color: #392F2C;
@@ -83,6 +83,7 @@ hr {
 	}
 	a:hover {
 		text-decoration: underline;
+		color: white;
 	}
 }
 .latest-news-post:hover {
@@ -91,9 +92,9 @@ hr {
   -ms-transition: all 500ms ease;
   -o-transition: all 500ms ease;
   transition: all 500ms ease;
-	background-color: #392F2C;
+  background-color: #392F2C;
 	a {
-		color: white;
+		color: #C1B1AA;
 	}
 	.news-date {
 		p {
@@ -106,6 +107,18 @@ hr {
 			color: white;
 			font-size: 13px;
 			margin-top: 20px;
+		}
+	}
+	#read-more-color {
+		color: white;
+		a {
+			color: white;
+		}
+	}
+	#close-color {
+		color: white;
+		a {
+			color: white;
 		}
 	}
 }

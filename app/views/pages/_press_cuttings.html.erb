@@ -8,7 +8,7 @@
 			<p><span><%= press_release.title if press_release %></span></p>
 			<div class="news-brief" id="news-brief-<%= press_release.id %>">
 				<p><%= press_release.first_paragraph if press_release %></p>
-				<h6><%= link_to "[ READ MORE... ]", "#", class: 'news-read-more','data-target' => "#news-#{press_release.id}" %></h6>
+				<h6 id='read-more-color'><%= link_to "[ READ MORE... ]", "#", class: 'news-read-more','data-target' => "#news-#{press_release.id}" %></h6>
 			</div>
 			<div class="full-news hidden slideDown" id="news-<%= press_release.id %>">
       <%= cl_image_tag(press_release.photo, width: 400, height: 200, crop: :fill) if press_release.photo? %>
@@ -17,7 +17,7 @@
 
 				<br>
         <p>Posted in News on <%= press_release.formatted_date if press_release %></p>
-				<h6><%= link_to "[ CLOSE ]", "#", class: "news-close", 'data-target' => "#news-brief-#{press_release.id}" %></h6>
+				<h6 id='close-color'><%= link_to "[ CLOSE ]", "#", class: "news-close", 'data-target' => "#news-brief-#{press_release.id}" %></h6>
 			</div>
 		</div>
 	</div>
