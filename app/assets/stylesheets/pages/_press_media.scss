@@ -75,6 +75,15 @@ hr {
 		line-height: 18px;
 		margin-top: 10px;
 	}
+	li {
+		color: #C1B1AA;
+		font-stretch: ultra-condensed;
+		line-height: 18px;
+		margin-top: 10px;
+	}
+	a:hover {
+		text-decoration: underline;
+	}
 }
 .latest-news-post:hover {
   -webkit-transition: all 500ms ease;
