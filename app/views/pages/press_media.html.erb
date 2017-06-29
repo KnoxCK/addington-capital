@@ -63,5 +63,45 @@
         <% end %>
       <% end %>
     </div>
+    <div class="year 2014" data-target=".2014-news">2014</div>
+    <div class="2014-news hidden">
+      <% @press_releases.each do |press_release| %>
+        <% if press_release.date.year == 2014 %>
+          <%= render 'pages/archive_press_cuttings', press_release: press_release %>
+        <% end %>
+      <% end %>
+    </div>
+    <div class="year 2013" data-target=".2013-news">2013</div>
+    <div class="2013-news hidden">
+      <% @press_releases.each do |press_release| %>
+        <% if press_release.date.year == 2013 %>
+          <%= render 'pages/archive_press_cuttings', press_release: press_release %>
+        <% end %>
+      <% end %>
+    </div>
+    <div class="year 2012" data-target=".2012-news">2012</div>
+    <div class="2012-news hidden">
+      <% @press_releases.each do |press_release| %>
+        <% if press_release.date.year == 2012 %>
+          <%= render 'pages/archive_press_cuttings', press_release: press_release %>
+        <% end %>
+      <% end %>
+    </div>
+    <div class="year 2011" data-target=".2011-news">2011</div>
+    <div class="2011-news hidden">
+      <% @press_releases.each do |press_release| %>
+        <% if press_release.date.year == 2011 %>
+          <%= render 'pages/archive_press_cuttings', press_release: press_release %>
+        <% end %>
+      <% end %>
+    </div>
+    <div class="year 2010" data-target=".2010-news">2010</div>
+    <div class="2010-news hidden">
+      <% @press_releases.each do |press_release| %>
+        <% if press_release.date.year == 2010 %>
+          <%= render 'pages/archive_press_cuttings', press_release: press_release %>
+        <% end %>
+      <% end %>
+    </div>
   </div>
 </div>
