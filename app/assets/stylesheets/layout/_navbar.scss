@@ -134,6 +134,23 @@
 }
 
 
+@media only screen and (max-width:1269px){
+  .navbar-addcap-brand img {
+    width: 252px;
+    top: 11px;
+  }
+}
+@media only screen and (max-width:1258px){
+  .navbar-addcap-link {
+    margin-right: 0; 
+    margin-left: 0;
+    padding: 10px 10px; 
+  }
+  .navbar-addcap-brand img {
+    width: 182px;
+    top: 21px;
+  }
+}
 // Mobile & Tablet only
 @media only screen and (max-width:1200px){
   .navbar-addcap-scroll {
