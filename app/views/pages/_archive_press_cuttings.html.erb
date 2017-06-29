@@ -12,7 +12,7 @@
 			</div>
 			<div class="full-news hidden slideDown" id="archive-<%= press_release.id %>">
       <%= cl_image_tag(press_release.photo, width: 400, height: 200, crop: :fill) if press_release %>
-				<p><%= press_release.body if press_release %></p>
+				<p><%= press_release.body.html_safe if press_release %></p>
 				<br>
         <p>Posted in News on <%= press_release.formatted_date if press_release %></p>
 				<h6><%= link_to "[ CLOSE ]", "#", class: "archive-close", 'data-target' => "#archive-brief-#{press_release.id}" %></h6>
