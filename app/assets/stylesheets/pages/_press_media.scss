@@ -110,7 +110,7 @@ hr {
 	}
 }
 .news-snippet {
-	width: 1300px;
+	width: 80%;
 }
 .news-title {
 	h6 {
@@ -157,4 +157,16 @@ hr {
     text-decoration: underline;
     cursor: pointer;
   }
+}
+
+@media only screen and (max-width:925px){
+  .banner-content {
+    width: auto;
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+  .latest-news-post {
+    padding: 10px 10vw 10px 10vw;
+  }
+  
 }

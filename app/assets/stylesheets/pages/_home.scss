@@ -17,7 +17,7 @@
 	display: flex;
 	justify-content: center;
 	align-items: center;
-  padding-top: 25px;
+  	padding: 25px 40px 0 40px;
 }
 .what-we-do {
 	padding-top: 30px;
@@ -71,3 +71,36 @@
     }
   }
 }
+@media only screen and (max-width:991px){
+  .navbar-addcap-brand img {
+    display: none;
+  }
+}
+@media only screen and (max-width:925px){
+  .banner-content {
+    width: auto;
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+  .latest-news-post {
+    padding: 10px 10vw 10px 10vw;
+  }
+}
+@media only screen and (max-width:682px){
+  .blue-contact-wrapper {
+    padding: 0px;
+  }
+  .contact-img img {
+    width: 500px;
+    height: 436px;
+  }
+}
+@media only screen and (max-width:670px){
+  
+
+}
+
+
+
+
+
