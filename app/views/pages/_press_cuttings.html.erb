@@ -11,7 +11,7 @@
 				<h6><%= link_to "[ READ MORE... ]", "#", class: 'news-read-more','data-target' => "#news-#{press_release.id}" %></h6>
 			</div>
 			<div class="full-news hidden slideDown" id="news-<%= press_release.id %>">
-      <%= cl_image_tag(press_release.photo, width: 400, height: 200, crop: :fill) if press_release %>
+      <%= cl_image_tag(press_release.photo, width: 400, height: 200, crop: :fill) if press_release.photo? %>
 
 				<p><%= simple_format press_release.body.html_safe if press_release %></p>
 
