@@ -183,6 +183,14 @@
     opacity: 1;
   }
 }
+@media only screen and (max-width:682px){
+  .navbar-addcap {
+    background-color: transparent;
+    background: transparent;
+    border: none;
+    max-width: 100px;
+  }
+}
 // Tablet - portrait max 420
 @media only screen and (max-width:420px){
   .navbar-addcap-brand img {

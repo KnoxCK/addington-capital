@@ -234,5 +234,43 @@ hr {
   .latest-news-post {
     padding: 10px 10vw 10px 10vw;
   }
-  
+}
+@media only screen and (max-width:670px){
+  .latest-news-post {
+    flex-direction: column;
+  }
+  .latest-news-post:hover {
+    .news-date p {
+      width: auto;
+      margin-right: 10px;
+      font-size: 18px;
+    }
+  }
+  .news-date p {
+    width: auto;
+    margin-right: 10px;
+    font-size: 18px;
+  }
+  .latest-news-post {
+    padding: 10px 0px 10px 32px;
+  }
+  .home-press-tabs {
+    padding: 0;
+    flex-direction: column;
+    h5 {
+      margin: 0 0 0 30px;
+      font-size: 22px;
+      letter-spacing: 1px;
+    }
+  }
+  .dotted-line {
+    display:none;
+  }
+  .press-title {
+    padding: 20px 10px 0 32px;
+    margin-bottom: 20px;
+    font-size: 45px;
+    margin-top: 0;
+    width: auto;
+  }
 }
