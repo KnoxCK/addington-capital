@@ -149,8 +149,6 @@
     background-color: #DA6024;
   }
 }
-
-
 @media only screen and (max-width:1280px){
   .navbar-addcap-brand img {
     width: 252px;
@@ -159,13 +157,24 @@
 }
 @media only screen and (max-width:1258px){
   .navbar-addcap-link {
-    margin-right: 0; 
-    margin-left: 0;
+    padding: 10px 10px; 
+  }
+  .navbar-addcap-link:hover {
     padding: 10px 10px; 
   }
   .navbar-addcap-brand img {
     width: 182px;
     top: 21px;
+  }
+}
+@media only screen and (max-width:1066px){
+  .navbar-addcap-link {
+    margin-right: 0px;
+    margin-left: 0px;
+  }
+  .navbar-addcap-link:hover {
+    margin-right: 0px;
+    margin-left: 0px;
   }
 }
 // Mobile & Tablet only
