@@ -29,6 +29,18 @@ class PagesController < ApplicationController
     case params[:name]
     when 'roberts'
       send_file "#{Rails.root}/app/assets/vcards/Martin Roberts.vcf", x_sendfile: true
+    when 'allen'
+      send_file "#{Rails.root}/app/assets/vcards/Matthew Allen.vcf", x_sendfile: true
+    when 'wagstaff'
+      send_file "#{Rails.root}/app/assets/vcards/Alex Wagstaff.vcf", x_sendfile: true
+    when 'hwang'
+      send_file "#{Rails.root}/app/assets/vcards/Anna Hwang.vcf", x_sendfile: true
+    when 'symonds'
+      send_file "#{Rails.root}/app/assets/vcards/Philip Symonds.vcf", x_sendfile: true
+    when 'vaughan'
+      send_file "#{Rails.root}/app/assets/vcards/Steven Vaughan.vcf", x_sendfile: true
+    when 'bouma'
+      send_file "#{Rails.root}/app/assets/vcards/Nic Bouma.vcf", x_sendfile: true
     end
   end
 
