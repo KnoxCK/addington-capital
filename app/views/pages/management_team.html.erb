@@ -30,7 +30,7 @@
 	</div>
 
 	<div class="team-box">
-    <div class="pointer" id="team-member-martin">
+    <div class="pointer" id="team-member-matthew">
 		  <%= image_tag "http://res.cloudinary.com/dqxvcdy6w/image/upload/v1498726482/AC090_matthew_allen_l2izbo.jpg" %>
 			<p class="team-name">Matthew Allen MRICS</p>
 			<p class="team-title">Principal and Co-Founder</p>
@@ -46,67 +46,81 @@
 </div>
 
 <div class="team-boxes team-row-two">
-	<div class="team-box" id="team-member-alex">
-		<%= image_tag "http://res.cloudinary.com/dqxvcdy6w/image/upload/v1498726482/a080_alex_wagstaff_drunnj.png" %>
-		<div class="team-text">
+	<div class="team-box">
+    <div class="pointer" id="team-member-alex">
+		  <%= image_tag "http://res.cloudinary.com/dqxvcdy6w/image/upload/v1498726482/a080_alex_wagstaff_drunnj.png" %>
 			<p class="team-name">Alex Wagstaff MRICS</p>
 			<p class="team-title">Partner, Head of Retail Management</p>
-			<span>T: +44 (0)20 7042 9250<br>
-				E: <%= link_to "info@addingtoncapital.com", "mailto:info@addingtoncapital.com" %>
+    </div>
+    <div class="team-text">
+			<span>T: +44 (0)20 7042 9250</span><br>
+			<span>E: <%= link_to "info@addingtoncapital.com", "mailto:info@addingtoncapital.com" %>
 			</span>
 			<div id="empty-div"></div>
-			<p><span>Download vCard</span></p>
-		</div>
+    </div>
+		<p><span><%= link_to "Download vCard", downloadvcard_path(name: 'wagstaff') %></span></p>
 	</div>
-	<div class="team-box" id="team-member-anna">
-		<%= image_tag "http://res.cloudinary.com/dqxvcdy6w/image/upload/v1498726482/a025_anna_hwang_ujuexc.png" %>
-		<div class="team-text">
+
+	<div class="team-box">
+    <div class="pointer" id="team-member-anna">
+		  <%= image_tag "http://res.cloudinary.com/dqxvcdy6w/image/upload/v1498726482/a025_anna_hwang_ujuexc.png" %>
+
 			<p class="team-name">Anna Hwang MRICS</p>
 			<p class="team-title">Partner</p>
+    </div>
+    <div class="team-text">
 			<span>T: +44 (0)20 7042 9250<br>
 				E: <%= link_to "info@addingtoncapital.com", "mailto:info@addingtoncapital.com" %>
 			</span>
 			<div id="empty-div"></div>
-			<p><span>Download vCard</span></p>
-		</div>
+    </div>
+    <p><span><%= link_to "Download vCard", downloadvcard_path(name: 'hwang') %></span></p>
 	</div>
-	<div class="team-box" id="team-member-philip">
-		<%= image_tag "http://res.cloudinary.com/dqxvcdy6w/image/upload/v1498726481/a099_Philip_symonds_rfxnlw.png" %>
-		<div class="team-text">
+
+	<div class="team-box">
+    <div class="pointer" id="team-member-philip">
+		  <%= image_tag "http://res.cloudinary.com/dqxvcdy6w/image/upload/v1498726481/a099_Philip_symonds_rfxnlw.png" %>
 			<p class="team-name">Philip Symonds MRICS</p>
 			<p class="team-title">Partner</p>
+    </div>
+    <div class="team-text">
 			<span>T: +44 (0)20 7042 9250<br>
 				E: <%= link_to "info@addingtoncapital.com", "mailto:info@addingtoncapital.com" %>
 			</span>
 			<div id="empty-div"></div>
-			<p><span>Download vCard</span></p>
-		</div>
+    </div>
+    <p><span><%= link_to "Download vCard", downloadvcard_path(name: 'symonds') %></span></p>
 	</div>
 </div>
+
 <div class="team-boxes team-row-three">
-	<div class="team-box" id="team-member-steven">
-		<%= image_tag "http://res.cloudinary.com/dqxvcdy6w/image/upload/v1498726481/a037_steven_vaughn_xqxdjx.png" %>
-		<div class="team-text">
+	<div class="team-box">
+    <div class="pointer" id="team-member-steven">
+		  <%= image_tag "http://res.cloudinary.com/dqxvcdy6w/image/upload/v1498726481/a037_steven_vaughn_xqxdjx.png" %>
 			<p class="team-name">Steven Vaughan MRICS</p>
 			<p class="team-title">Partner</p>
+    </div>
+    <div class="team-text">
 			<span>T: +44 (0)20 7042 9250<br>
 				E: <%= link_to "info@addingtoncapital.com", "mailto:info@addingtoncapital.com" %>
 			</span>
 			<div id="empty-div"></div>
-			<p><span>Download vCard</span></p>
-		</div>
+    </div>
+    <p><span><%= link_to "Download vCard", downloadvcard_path(name: 'vaughan') %></span></p>
 	</div>
-	<div class="team-box" id="team-member-nic">
-		<%= image_tag "http://res.cloudinary.com/dqxvcdy6w/image/upload/v1498726481/a054_nic_bouma_fueabn.png" %>
-		<div class="team-text">
+	<div class="team-box">
+    <div class="pointer" id="team-member-nic">
+		  <%= image_tag "http://res.cloudinary.com/dqxvcdy6w/image/upload/v1498726481/a054_nic_bouma_fueabn.png" %>
 			<p class="team-name">Nic Bouma BSc, MSc</p>
 			<p class="team-title">Partner</p>
+    </div>
+    <div class="team-text">
 			<span>T: +44 (0)20 7042 9250<br>
 				E: <%= link_to "info@addingtoncapital.com", "mailto:info@addingtoncapital.com" %>
 			</span>
 			<div id="empty-div"></div>
-			<p><span>Download vCard</span></p>
-		</div>
+    </div>
+    <p><span><%= link_to "Download vCard", downloadvcard_path(name: 'bouma') %></span></p>
 	</div>
 </div>
 <div class="team-lg team-martin">
