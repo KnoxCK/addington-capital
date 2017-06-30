@@ -88,6 +88,9 @@
 
 .dropdown {
   font-size: 25px;
+  position: absolute;
+  top: 40px;
+  left: 30px;
 }
 .dropdown a {
   text-decoration: none;
@@ -104,37 +107,51 @@
 /* Navbar dropdown menu */
 .navbar-addcap-dropdown-menu {
   margin-top: 15px;
-  box-shadow: 1px 1px 4px #E6E6E6;
-  border-color: #E6E6E6;
+  //box-shadow: 1px 1px 4px #E6E6E6;
+  //border-color: #E6E6E6;
   text-decoration: none;
 }
 .navbar-addcap-dropdown-menu li > a {
   transition: color 0.3s ease;
   font-weight: lighter !important;
-  color: grey !important;
-  font-size: 15px !important;
-  line-height: 22px !important;
-  padding: 10px 20px;
+  color: white !important;
+  font-size: 20px !important;
+  line-height: 20px !important;
+  padding: 10px 10px;
   width: 100%;
 }
+.navbar-addcap-dropdown-menu li > a:hover {
+  background-color: #DA6024;
+  color: black !important;
+}
 .navbar-addcap-dropdown-menu:before {
-  content: ' ';
-  height: 10px;
-  width: 10px;
-  position: absolute;
-  right: 10px;
-  top: -6px;
-  background-color: white;
-  transform: rotate(45deg);
-  border-left: 1px solid #E6E6E6;
-  border-top: 1px solid #E6E6E6;
+    content: ' ';
+    height: 10px;
+    width: 10px;
+    position: absolute;
+    right: 1px;
+    top: -6px;
+    background-color: white;
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+    border-left: 1px solid #E6E6E6;
+    border-top: 1px solid #E6E6E6;
+    display: none;
 }
 .dropdown-menu-right {
   padding: 30px;
+  left: -33px !important;
+  right: auto;
+  background-color: #DA6024;
+  height: 475px;
+  width: 270px;
+  a:hover {
+    background-color: #DA6024;
+  }
 }
 
 
-@media only screen and (max-width:1269px){
+@media only screen and (max-width:1280px){
   .navbar-addcap-brand img {
     width: 252px;
     top: 11px;
