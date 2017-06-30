@@ -26,7 +26,10 @@ class PagesController < ApplicationController
   end
 
   def vcard
-
+    case params[:name]
+    when 'roberts'
+      send_file "#{Rails.root}/app/assets/vcards/Martin Roberts.vcf", x_sendfile: true
+    end
   end
 
 end
