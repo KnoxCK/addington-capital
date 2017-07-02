@@ -45,7 +45,7 @@
 			<% end %>
 		</div>
 	</div>
-	<div class="vertical-line">
+	<div class="vertical-line vertical-line-hidden-mob">
 		<div class="footer-brochure-img footer-child">
 			<%= image_tag "http://res.cloudinary.com/dqxvcdy6w/image/upload/v1497288388/Screen_Shot_2017-06-12_at_18.25.56_xjesi1.png" %>
 		</div>
@@ -55,4 +55,26 @@
 			<%= link_to "Download Brochure", downloadbrochure_path %>
 		</div>
 	</div>
+
+
+<!-- mobile -->
+<div class="mobile">
+	<div class="sm-icons-footer-mob">
+		<%= link_to "https://www.twitter.com", target: "_blank" do %>
+			<%= image_tag "Addington_Capital_Twitter_logo.png", class: "social-media-icon" %>
+		<% end %>
+		<%= link_to "https://www.linkedin.com", target: "_blank" do %>
+			<%= image_tag "Addington_Capital_LinkedIn_logo.png", class: "social-media-icon" %>
+		<% end %>
+		<%= link_to "https://www.facebook.com", target: "_blank" do %>
+			<%= image_tag "Addington_Capital_Facebook_logo.png", class: "social-media-icon" %>
+		<% end %>
+	</div>
+	<div class="footer-brochure-mob">
+		<%= link_to "Download Brochure", downloadbrochure_path %>
+	</div>
+	<div class="footer-brochure-img-mob footer-child">
+		<%= image_tag "http://res.cloudinary.com/dqxvcdy6w/image/upload/v1497288388/Screen_Shot_2017-06-12_at_18.25.56_xjesi1.png" %>
+	</div>
+</div>
 </div>
