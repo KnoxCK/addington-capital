@@ -158,9 +158,6 @@
   width: 940px;
 }
 @media only screen and (max-width:1366px){
-	.property-arrow {
-		display: none;
-	}
 	.case-study-wrapper {
 		align-items: center;
 	}
@@ -206,7 +203,7 @@
 		flex-direction: column;
 		img {
 		    height: auto;
-		    width: 90vw;
+    		width: 70vw;
 		 }
 	}
 	.case-study-lg-right {
@@ -218,7 +215,7 @@
     	}
     }
     .case-studies-lg {
-    	height: 40vh;
+    	height: 141vh;
     	width: 80vw;
 	}
 	.case-study-lg {
