@@ -157,6 +157,14 @@
   height: 420px;
   width: 940px;
 }
+@media only screen and (max-width:1366px){
+	.property-arrow {
+		display: none;
+	}
+	.case-study-wrapper {
+		align-items: center;
+	}
+}
 @media only screen and (max-width:1122px){
 	.case-study-lg-box img {
 	    height: 280px;
@@ -171,9 +179,6 @@
 	.case-studies-lg {
     	width: 876px;
     }
-	.property-arrow {
-		display: none;
-	}
 	.case-study-wrapper {
 		flex-direction: column;
 	}
