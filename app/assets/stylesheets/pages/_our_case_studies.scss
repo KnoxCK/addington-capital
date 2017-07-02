@@ -158,6 +158,35 @@
   height: 420px;
   width: 940px;
 }
+@media only screen and (max-width:946px){
+	.case-studies-boxes-top {
+    	flex-wrap: wrap;
+    }
+	.case-studies-boxes-bottom {
+		flex-wrap: wrap;
+		margin-top: 0;
+	}
+	.case-studies-box {
+		margin-bottom: 4px;
+	}
+	.case-studies-wrapper {
+		flex-direction: column;
+	}
+}
+@media only screen and (max-width:400px){
+	.case-studies-wrapper {
+		background-color: white;
+	}
+	.case-studies-tabs {
+		flex-direction: column;
+	    align-items: center;
+	    padding: 10px 0;
+	    h5 {
+	    	padding: 0;
+	    	margin: 0;
+	    }
+	}
+}
 
 
 
