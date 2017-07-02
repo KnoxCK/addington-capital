@@ -162,7 +162,7 @@
 		align-items: center;
 	}
 }
-@media only screen and (max-width:1122px){
+@media only screen and (max-width:1123px){
 	.case-study-lg-box img {
 	    height: 280px;
 	}
@@ -178,6 +178,12 @@
     }
 	.case-study-wrapper {
 		flex-direction: column;
+	}
+	.prop-arrow-right {
+		display: none;
+	}
+	.prop-arrow-left {
+		display: none;
 	}
 }
 @media only screen and (max-width:946px){
