@@ -189,11 +189,7 @@
 	.case-studies-box {
 		margin-bottom: 4px;
 	}
-	.case-study-lg {
-    	width: auto;
-    }
     .case-study-lg-box {
-		flex-direction: column;
     	img {
 	    	height: 280px;
 		}
@@ -206,6 +202,15 @@
 	}
 	.case-study-lg-box {
 		flex-direction: column;
+	}
+	.case-study-lg-right {
+	    width: 90vw;
+	 	p {
+    		width: 84vw;
+    	}
+    }
+    .case-studies-lg {
+    	height: 896px;
 	}
 }
 @media only screen and (max-width:400px){
