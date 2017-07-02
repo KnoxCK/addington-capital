@@ -108,3 +108,27 @@
 	margin-bottom: 40px;
 	line-height: 22px;
 }
+@media only screen and (max-width:845px){
+	.team-lg-text {
+	    width: 100%;
+	}
+	.team-lg-image img {
+    	width: 100%;
+   	}
+   	.team-boxes {
+    	flex-direction: column;
+    	align-items: center;
+   	}
+   	.team-row-two {
+   		margin-top: 0;
+   	}
+   	.team-row-three {
+   		margin-top: 0;
+   	}
+}
+
+
+
+
+
+
