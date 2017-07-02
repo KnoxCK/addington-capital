@@ -1,0 +1,22 @@
+.navbar-addcap-landing {
+  display: flex;
+  height: 100px;
+  padding: 0px 60px;
+  align-items: center;
+  justify-content: center;
+  background-color: #B2A7A2;
+  background: #B2A7A2;
+  border: #CAC2BF solid 0.2px;
+}
+@media only screen and (max-width:991px){
+	.navbar-addcap-landing {
+	  display: flex;
+	  height: 100px;
+	  padding: 0px 60px;
+	  align-items: center;
+	  justify-content: center;
+	  background-color: transparent;
+	  background: transparent;
+	  border: none;
+	}
+}

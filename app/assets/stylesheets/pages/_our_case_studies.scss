@@ -201,23 +201,31 @@
 	}
 }
 @media only screen and (max-width:876px){
-	.case-study-lg-box img {
-	    height: auto;
-	    width: 90vw;
-	}
 	.case-study-lg-box {
+		width: 400px;
 		flex-direction: column;
+		img {
+		    height: auto;
+		    width: 90vw;
+		 }
 	}
 	.case-study-lg-right {
-	    width: 90vw;
+	    width: 80vw;
     	margin-top: 20px;
+    	padding-left: 0;
 	 	p {
-    		width: 84vw;
+    		width: 80vw;
     	}
     }
     .case-studies-lg {
-    	height: 896px;
-    	width: 100vw;
+    	height: 40vh;
+    	width: 80vw;
+	}
+	.case-study-lg {
+    	width: 80vw;
+    }
+	.case-study-lg-title {
+		width: 80vw;
 	}
 }
 @media only screen and (max-width:400px){

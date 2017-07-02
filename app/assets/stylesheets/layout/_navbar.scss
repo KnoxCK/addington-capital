@@ -183,14 +183,10 @@
     opacity: 1;
   }
 }
-@media only screen and (max-width:991px){
-  .navbar-addcap {
-  }
-}
 // Tablet - portrait max 420
 @media only screen and (max-width:420px){
   .navbar-addcap-brand img {
-      width: 100px;
+    width: 100px;
   }
 }
 
