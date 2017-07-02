@@ -199,6 +199,15 @@
 		}
 	}
 }
+@media only screen and (max-width:876px){
+	.case-study-lg-box img {
+	    height: auto;
+	    width: 90vw;
+	}
+	.case-study-lg-box {
+		flex-direction: column;
+	}
+}
 @media only screen and (max-width:400px){
 	.case-studies-wrapper {
 		background-color: white;
