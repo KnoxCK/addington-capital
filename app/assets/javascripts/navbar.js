@@ -9,4 +9,12 @@ $(function(){
       }
     });
   }
+  $("#what-we-do-mobile-link").click(function(e) {
+    e.preventDefault();
+    $(".navbar-addcap-link").removeClass('active');
+    $(this).addClass('active');
+      $('html,body').animate({
+          scrollTop: $(".what-we-do-wrapper").offset().top - 100},
+          'slow');
+  });
 });
