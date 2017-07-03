@@ -2,7 +2,6 @@ class PagesController < ApplicationController
   skip_before_action :authenticate_user!
 
   def home
-    @transaction = Transaction.first
     @latest_press_releases = PressRelease.order(date: :desc).first(5)
   end
 
