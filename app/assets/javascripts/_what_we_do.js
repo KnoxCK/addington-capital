@@ -4,7 +4,7 @@ $(document).ready(function(){
     $('.latest-news').addClass('hidden');
     $('.news-archive').removeClass('hidden');
     $('.archive').addClass('active');
-  } else if (hash) {
+  } else if (hash && hash !== '#whatwedo') {
     $('.retail-tab').removeClass('active');
     $('.case-studies-tabs .'+hash.substring(6)+'-tab').addClass('active');
     $('.retail-case-studies').addClass('hidden');
