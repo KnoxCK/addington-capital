@@ -35,6 +35,7 @@
 #map {
   height: 500px;
   margin: 0;
+  pointer-events: none;
 }
 @media only screen and (max-width:682px){
 	.contact-img img {

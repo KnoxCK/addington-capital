@@ -18,6 +18,9 @@
       minZoom: 17,
       zoomControl: false,
       streetViewControl: false,
+      // scrollWheel: false,
+      // panControl: false,
+      gestureHandling: 'none',
       styles: [
     {
         "featureType": "water",
@@ -199,6 +202,8 @@ var marker = new google.maps.Marker({
   position: addCap,
   map: map
 });
+var transitLayer = new google.maps.TransitLayer();
+        transitLayer.setMap(map);
   }
 </script>
 <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD4BcjJFqqwD2SQsmnJLh0egu_B8pu5Yqc&callback=initMap">
