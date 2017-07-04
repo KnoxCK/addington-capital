@@ -1,7 +1,7 @@
 .blue-contact-wrapper {
 	background-color: #7D98AA;
 	color: white;
-	padding: 20px;
+	padding: 0px 0px 20px 0px;
 }
 .contact-text {
 	span {
@@ -30,6 +30,12 @@
     	height: 525px;
     	margin-top: 20px;
 	}
+}
+
+#map {
+  height: 500px;
+  margin: 0;
+  pointer-events: none;
 }
 @media only screen and (max-width:682px){
 	.contact-img img {
