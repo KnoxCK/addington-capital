@@ -1,9 +1,9 @@
 .blue-contact-wrapper {
 	background-color: #7D98AA;
 	color: white;
-	padding: 0px 0px 20px 0px;
 }
 .contact-text {
+	padding-top: 15px;
 	span {
 		color: #3C2F2C;
 	}
@@ -25,17 +25,38 @@
 .contact-img {
 	display: flex;
 	justify-content: center;
+	padding-bottom: 20px;
 	img {
 		width: 650px;
     	height: 525px;
     	margin-top: 20px;
 	}
 }
-
+.contacts {
+	display: flex;
+	justify-content: center;
+	padding-top: 30px;
+	padding-bottom: 40px;
+}
+.main-contact {
+	padding: 0 20px;
+	h6 {
+		font-size: 19px;
+	}
+}
 #map {
   height: 500px;
   margin: 0;
   pointer-events: none;
+}
+@media only screen and (max-width:704px){
+	.contacts {
+		flex-direction: column;
+		padding-top: 0;
+	}
+	.main-contact { 
+		margin-top: 30px;
+	}
 }
 @media only screen and (max-width:682px){
 	.contact-img img {
