@@ -70,22 +70,24 @@
 }
 .team-lg-text {
 	width: 806px;
-   	height: auto;
-   	padding-left: 15px;
-   	padding-right: 20px;
-   	h4 {
-   		margin-top: 14px;
-   		margin-bottom: 4px;
-   	}
-   	h6 {
-   		margin-top: 0;
-   	}
-   	p {
-   		span {
-			color: #DA6024;
-			text-decoration: underline;
-		}
-   	}
+ 	height: auto;
+ 	padding-left: 15px;
+ 	padding-right: 20px;
+ 	h4 {
+ 		margin-top: 14px;
+ 		margin-bottom: 4px;
+ 	}
+ 	h6 {
+ 		margin-top: 0;
+ 	}
+ 	p {
+		span {
+      a {
+      	color: #DA6024;
+      	text-decoration: underline;
+      }
+    }
+ 	}
 	a {
 		color: #392F2C;
 	}
