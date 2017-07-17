@@ -118,6 +118,9 @@
     &.active {
        opacity: 1;
        display: block;
+       .case-study-lg-right {
+        overflow: scroll;
+       }
     }
 }
 .case-study-lg-box {
