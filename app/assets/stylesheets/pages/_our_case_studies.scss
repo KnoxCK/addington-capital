@@ -104,11 +104,13 @@
 }
 .case-study-lg {
 	width: 892px;
+  height: 420px;
 	margin-left: 40px;
 	margin-right: 40px;
 	margin-top: 20px;
 	position: absolute;
 	opacity: 0;
+  overflow: scroll;
 	-webkit-transition: opacity 500ms ease;
 	-moz-transition: opacity 500ms ease;
 	-ms-transition: opacity 500ms ease;
@@ -226,6 +228,8 @@
 	}
 	.case-study-lg {
   	width: 80vw;
+    height: 141vh;
+    overflow: auto;
   }
 	.case-study-lg-title {
 		width: 80vw;
@@ -256,6 +260,8 @@
     display: flex;
     flex-direction: column;
     margin: 0;
+    height: 141vh;
+    overflow: auto;
     p {
       text-align: center;
     }
