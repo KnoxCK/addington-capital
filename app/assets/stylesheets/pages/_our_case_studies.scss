@@ -110,7 +110,6 @@
 	margin-top: 20px;
 	position: absolute;
 	opacity: 0;
-  overflow: scroll;
 	-webkit-transition: opacity 500ms ease;
 	-moz-transition: opacity 500ms ease;
 	-ms-transition: opacity 500ms ease;
@@ -141,6 +140,8 @@
 .case-study-lg-right {
 	padding-left: 15px;
 	width: 800px;
+  height: 350px;
+  overflow: scroll;
 	h6 {
 		font-size: 18px;
 	}
@@ -260,7 +261,6 @@
     display: flex;
     flex-direction: column;
     margin: 0;
-    height: 141vh;
     overflow: auto;
     p {
       text-align: center;
