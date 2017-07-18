@@ -8,7 +8,7 @@
   transition: opacity 500ms ease;
   &.active {
     opacity: 1;
-    z-index: 1001;
+    z-index: 1000;
   }
 }
 
