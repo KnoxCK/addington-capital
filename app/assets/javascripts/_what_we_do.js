@@ -18,9 +18,11 @@ $(document).ready(function(){
   $('.what-we-do-links h5').click(function(e) {
     e.preventDefault();
     $('.about').removeClass('active');
+    // $('.about').addClass('hidden');
     $('.what-we-do-links h5').removeClass('active');
     $($(this).data('target')).addClass('active');
     $(this).addClass('active');
+    // $($(this).data('target')).removeClass('hidden');
   });
 
   $('.about-arrow-right').click(function(e){
@@ -28,8 +30,11 @@ $(document).ready(function(){
     var active = $('.about.active')
     if (active.next().is("div")) {
       active.removeClass('active');
+      // $('.about').addClass('hidden');
       var next = active.next();
+      // next.removeClass('hidden');
       next.addClass('active');
+
       $('.what-we-do-links h5').removeClass('active');
       $('.what-we-do-links h5').each(function(){
         if ($(this).text() === next.children('h3').text()) {
@@ -44,8 +49,11 @@ $(document).ready(function(){
     var active = $('.about.active')
     if (active.prev().is("div")) {
       active.removeClass('active');
+      // $('.about').addClass('hidden');
       var prev = active.prev();
+      // prev.removeClass('hidden');
       prev.addClass('active');
+
       $('.what-we-do-links h5').removeClass('active');
       $('.what-we-do-links h5').each(function(){
         if ($(this).text() === prev.children('h3').text()) {
