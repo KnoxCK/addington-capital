@@ -116,7 +116,7 @@
     			<%= cl_image_tag(case_study.photo) %>
     			<div class="case-study-lg-right">
     				<span><%= case_study.summary %></span>
-    				<p><%= case_study.description %></p>
+    				<p><%= simple_format case_study.description %></p>
     			</div>
     		</div>
     	</div>
@@ -146,7 +146,7 @@
             <%= cl_image_tag(case_study.photo) %>
             <div class="case-study-lg-right">
               <span><%= case_study.summary %></span>
-              <p><%= case_study.description %></p>
+              <p><%= simple_format case_study.description %></p>
             </div>
           </div>
         </div>
@@ -176,7 +176,7 @@
           <%= cl_image_tag(case_study.photo) %>
           <div class="case-study-lg-right">
             <span><%= case_study.summary %></span>
-            <p><%= case_study.description %></p>
+            <p><%= simple_format case_study.description %></p>
           </div>
         </div>
       </div>
