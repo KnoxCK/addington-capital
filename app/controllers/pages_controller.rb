@@ -9,9 +9,9 @@ class PagesController < ApplicationController
   end
 
   def our_case_studies
-    @retail_case_studies = CaseStudy.where(category_id: 1)
-    @residential_case_studies = CaseStudy.where(category_id: 2)
-    @offices_case_studies = CaseStudy.where(category_id: 3)
+    @retail_case_studies = CaseStudy.where(category_id: 1).reverse
+    @residential_case_studies = CaseStudy.where(category_id: 2).reverse
+    @offices_case_studies = CaseStudy.where(category_id: 3).reverse
   end
 
   def management_team
