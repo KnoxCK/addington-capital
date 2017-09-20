@@ -9,9 +9,9 @@ class PagesController < ApplicationController
   end
 
   def our_case_studies
-    @retail_case_studies = CaseStudy.where(category_id: 1)
-    @residential_case_studies = CaseStudy.where(category_id: 2)
-    @offices_case_studies = CaseStudy.where(category_id: 3)
+    @retail_case_studies = CaseStudy.where(category_id: 1).order(:priority)
+    @residential_case_studies = CaseStudy.where(category_id: 2).order(:priority)
+    @offices_case_studies = CaseStudy.where(category_id: 3).order(:priority)
   end
 
   def management_team
@@ -26,20 +26,20 @@ class PagesController < ApplicationController
 
   def vcard
     case params[:name]
-    when 'roberts'
-      send_file "#{Rails.root}/app/assets/vcards/Martin Roberts.vcf", x_sendfile: true
-    when 'allen'
-      send_file "#{Rails.root}/app/assets/vcards/Matthew Allen.vcf", x_sendfile: true
-    when 'wagstaff'
-      send_file "#{Rails.root}/app/assets/vcards/Alex Wagstaff.vcf", x_sendfile: true
-    when 'hwang'
-      send_file "#{Rails.root}/app/assets/vcards/Anna Hwang.vcf", x_sendfile: true
-    when 'symonds'
-      send_file "#{Rails.root}/app/assets/vcards/Philip Symonds.vcf", x_sendfile: true
-    when 'vaughan'
-      send_file "#{Rails.root}/app/assets/vcards/Steven Vaughan.vcf", x_sendfile: true
-    when 'bouma'
-      send_file "#{Rails.root}/app/assets/vcards/Nic Bouma.vcf", x_sendfile: true
+      when 'roberts'
+        send_file "#{Rails.root}/app/assets/vcards/Martin Roberts.vcf", x_sendfile: true
+      when 'allen'
+        send_file "#{Rails.root}/app/assets/vcards/Matthew Allen.vcf", x_sendfile: true
+      when 'wagstaff'
+        send_file "#{Rails.root}/app/assets/vcards/Alex Wagstaff.vcf", x_sendfile: true
+      when 'hwang'
+        send_file "#{Rails.root}/app/assets/vcards/Anna Hwang.vcf", x_sendfile: true
+      when 'symonds'
+        send_file "#{Rails.root}/app/assets/vcards/Philip Symonds.vcf", x_sendfile: true
+      when 'vaughan'
+        send_file "#{Rails.root}/app/assets/vcards/Steven Vaughan.vcf", x_sendfile: true
+      when 'bouma'
+        send_file "#{Rails.root}/app/assets/vcards/Nic Bouma.vcf", x_sendfile: true
     end
   end
 
