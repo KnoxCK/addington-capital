@@ -1,16 +1,18 @@
 $( document ).ready( function() {
   $("#press-page-down").click(function(e) {
     e.preventDefault();
-      $('html,body').animate({
-          scrollTop: $(".what-we-do-wrapper").offset().top - 100},
-          'slow');
+    $.smoothScroll({
+      scrollTarget: '.what-we-do-wrapper',
+      offset: -100,
+      speed: 1000
+    });
   });
 
 $('#header-page-down').click( function (e) {
 	e.preventDefault();
 	var height = jQuery(window).height() - $('.navbar-addcap-landing').height();
-       $( '.press-wrapper').attr( 'style', 'margin-top: -'+ height +'px!important;' );
-       $('#home-main').animate({ "top": -jQuery(window).height() }, 200, function () {});
+    $( '.press-wrapper').attr( 'style', 'margin-top: -'+ height +'px!important;' );
+    $('#home-main').animate({ "top": -jQuery(window).height() }, 200, function () {});
     });
 
 });

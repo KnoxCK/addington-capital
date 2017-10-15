@@ -4,9 +4,15 @@ $(".case-studies-box").click(function(e) {
   $(".case-study-lg").removeClass("active");
   // $($(this).data('category')).removeClass('hidden');
   $($(this).data('target')).addClass("active");
-  $('html,body').animate({
-      scrollTop: $(".case-study-detailed").offset().top - 100},
-      'slow');
+  // $('html,body').animate({
+  //     scrollTop: $(".case-study-detailed").offset().top - 100},
+  //     'slow');
+  $.smoothScroll({
+    scrollTarget: '.case-study-detailed',
+    offset: -100,
+    speed: 600
+  });
+
 });
 
 //Right Arrow

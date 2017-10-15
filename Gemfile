@@ -23,6 +23,10 @@ gem 'rails_admin', '>= 1.0.0.rc'
 gem 'cloudinary'
 gem 'carrierwave', '~> 0.11.2'
 
+source 'https://rails-assets.org' do
+  gem 'rails-assets-jquery-smooth-scroll'
+end
+
 group :development, :test do
   gem 'binding_of_caller'
   gem 'better_errors'

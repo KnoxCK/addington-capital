@@ -11,8 +11,13 @@ $(document).ready(function(){
     $('.retail-wrapper').addClass('hidden');
     $(''+hash+'').removeClass('hidden');
     $('.'+hash.substring(6)+'-wrapper').removeClass('hidden');
-    $('html,body').animate({
-      scrollTop: $(''+hash+'').offset().top - 170});
+    // $('html,body').animate({
+    //   scrollTop: $(''+hash+'').offset().top - 170});
+    $.smoothScroll({
+      scrollTarget: ''+hash+'',
+      offset: -170,
+      speed: 1000
+    });
   }
 
   $('.what-we-do-links h5').click(function(e) {
