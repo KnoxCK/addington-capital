@@ -141,11 +141,11 @@
 	margin-bottom: 15px;
 }
 .case-study-lg-right {
-	padding-left: 15px;
+  	padding-left: 15px;
 	width: 800px;
-  height: 340px;
-  z-index: 1000;
-  overflow: scroll;
+	height: auto;
+	z-index: 1000;
+	//overflow: scroll;
 	h6 {
 		font-size: 18px;
 	}
