@@ -31,7 +31,7 @@ group :development, :test do
   gem 'binding_of_caller'
   gem 'better_errors'
 
-  gem 'pry-byebug'
+  
   gem 'pry-rails'
   gem 'spring'
   gem 'listen', '~> 3.0.5'
